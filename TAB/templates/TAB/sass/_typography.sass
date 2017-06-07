@@ -1,0 +1,64 @@
+
+$font-primary: 'Proxima Nova', 'Helvetica Neue', Arial, sans-serif
+$font-secondary: 'Crimson Text', Georgia, 'Times New Roman', serif
+$font-color-primary: #202020
+$font-color-secondary: #5E5E5E
+$font-color-contrast: #FCFCFC
+$link-color: #1C668C
+$link-color-contrast: #DEEAEF
+ 
+
+@mixin text-primary($font-size, $line-height)
+	font-family: $font-primary
+	font-color: $font-color-primary
+	font-size: $font-size
+	line-height: $line-height
+
+@mixin text-secondary($font-size, $line-height)
+	font-family: $font-secondary
+	font-color: $font-color-secondary
+	font-size: $font-size
+	line-height: $line-height
+
+h1
+	@include text-secondary (2.8em, 2em)
+h2 
+	@include text-secondary (2.5em, 1.7em)
+h3 
+	@include text-secondary (2.2em, 1.4em)
+h4 
+	@include text-secondary (2em, 1.4em)
+h5 
+	@include text-secondary (1.7em, 1.2em)
+h6 
+	@include text-secondary (1.3em, 1.2em)
+
+p
+	@include text-primary(1em, 1.5em)
+
+.quote
+	@include text-primary(1.25em, 1.62em)
+	font-style: italic
+
+a
+	@include text-primary(1em, 1.5em)
+	font-color: $link-color
+	text-decoration: none
+		
+ul, ol
+	@include text-primary(1em, 1.5em)
+	margin: 0 0 0 2em
+	padding: 0
+	text-align: left
+
+.pcontrast
+	font-family: $font-primary
+	color: $font-color-contrast
+	font-size: 1em
+	line-height: 1.5em
+
+.acontrast
+	font-family: $font-primary
+	color: $link-color-contrast
+	font-size: 1em
+	line-height: 1.5em
