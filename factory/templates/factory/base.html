@@ -1,25 +1,89 @@
+ {% load static from staticfiles %}
+
+
+
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<html>
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Baha'is of the United States</title>
+
+    <script src="{% static 'wagtailadmin/js/vendor/jquery-2.2.1.js' %}"></script>
+    <script src="{% static 'wagtailadmin/js/vendor/jquery-ui-1.10.3.js' %}"></script>
+    <script src="{% static 'wagtailadmin/js/vendor/jquery.autosize.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{% static 'js/vendor/foundation.min.js' %}"></script>
+
+    {# STYLESHEETS #}
+    <link rel="stylesheet" type="text/x-sass" href="{% static 'stylesheets/main.sass' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/foundation-icons.css' %}" />
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,700' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="//use.typekit.net/ttb5aic.js"></script>
+    <script type="text/javascript">
+        try {
+            Typekit.load();
+        } catch (e) {}
+    </script>
 </head>
 
+
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <h1>UI Factory Home Page</h1>
-    {% block content %} {% endblock %}
+    <header>
+        <nav class="row menu expanded middle-xs">
+            <span class="col-xs start-xs">
+            <div class="row middle-xs">
+                <span class="icon fi-list"></span>
+            <p class="pcontrast">Menu</p>
+            </div>
+            </span>
+            <div class="col-xs center-xs">
+                <a href="#"><span class="starlogo"></span></a>
+            </div>
+            <div class="col-xs">
+                <div class="row middle-xs end-xs xs-hide">
+                    <span class="col-xs icon fi-magnifying-glass"></span>
+                    <input type="text" name="query" placeholder="Search" class="col-xs search" />
+                    <span class="col-xs center-xs register sm-hide"><a class="acontrast" href="#">Login</a> | <a class="acontrast" href="#">Register</a></span>
+                </div>
+            </div>
+        </nav>
+        {# BREADCRUMBS #} {% block globalbreadcrumbs %} {% endblock globalbreadcrumbs %}
+    </header>
+
+
+    {% block local_header %} {% endblock local_header %} {% block content %} {% endblock content %}
+
+
+    <footer>
+        <div class="row">
+            <address class="col-xs start-xs">
+                <p class="pcontrast">Bahá'í National Center<br/> 1233 Central Street<br/> Evanston IL, 60201<br/></p>
+                <a class="acontrast" href="tel:18477333400">(847) 733-3400</a>
+            </address>
+            <div class="col-xs center-xs footer-center">
+                <a class="acontrast" href="http://www.bahai.us/fund">
+                    <img src="/static/img/OCSHeartSign.png">
+                    <h4>Brought to you by the<br>National Bahá'í Fund</h4>
+                </a>
+            </div>
+            <address class="col-xs end-xs">
+                <p class="pcontrast">Bahá'í House of Worship<br/> 100 Linden Ave<br/> Wilmette, IL 60091<br/></p>
+                <a class="acontrast" href="tel:18478532300">(847) 853-2300</a>
+            </address>
+        </div>
+        <div class="row center-xs middle-xs copyright pcontrast">
+            <p>&copy; 2017 National Spiritual Assembly of the Bahá'ís of the United States</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).foundation();
+    </script>
 </body>
 
 </html>
