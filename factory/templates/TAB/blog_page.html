@@ -1,23 +1,19 @@
-{% extends "base.html" %}
-{% load wagtailcore_tags %}
-{% load static %}
-
-{% block content %}
-    <header class="">
-        <div class="text-center">
-            <img src="" alt="">
+{% extends '../factory/base.html' %} {% load wagtailcore_tags %} {% load static %} {% block content %}
+<header class="">
+    <div class="text-center">
+        <img src="" alt="">
+    </div>
+    <breadcrumbs><a href="/community-news/">community-news</a> / {{page.slug}}</breadcrumbs>
+</header>
+<main>
+    <div class="row">
+        <div class="">
+            <h4 class="">{{ page.title }}</h4>
+            <em>{{ page.latest_revision_created_at }}</em>
+            <p>
+                {{ page.body|richtext }}
+            </p>
         </div>
-        <breadcrumbs><a href="/community-news/">community-news</a> / {{page.slug}}</breadcrumbs>
-    </header>
-    <main>
-        <div class="row">
-            <div class="">
-                <h4 class="">{{ page.title }}</h4>
-                <em>{{ page.latest_revision_created_at }}</em>
-                <p>
-                    {{ page.body|richtext }}
-                </p>
-            </div>
-        </div>
-    </main>
+    </div>
+</main>
 {% endblock %}
