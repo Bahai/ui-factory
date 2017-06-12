@@ -15,3 +15,12 @@ def TAB_article(request):
 
 def login(request):
     return render(request, 'login/index.html', {})
+
+def loginhelp(request):
+    return render(request, 'login/help.html', {})
+
+def loginregister(request):
+    return render(request, 'login/register.html', {})
+
+def loginreset(request):
+    return render(request, 'login/reset.html', {})
