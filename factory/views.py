@@ -7,12 +7,6 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'factory/home.html', {})
 
-def 404(request):
-    return render(request, 'factory/404.html', {})
-
-def 500(request):
-    return render(request, 'factory/500.html', {})
-
 def TAB_index(request):
     return render(request, 'TAB/blog_index_page.html', {})
 
