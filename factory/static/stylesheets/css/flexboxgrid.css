@@ -33,20 +33,6 @@
     flex-direction: column-reverse;
 }
 
-.col-xs {
-    box-sizing: border-box;
-    -webkit-flex: 0 0 auto;
-    -ms-flex: 0 0 auto;
-    flex: 1 0 auto;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    -ms-flex-preferred-size: 0;
-    -webkit-flex-basis: 0;
-    flex-basis: 0;
-    max-width: 100%;
-}
-
 .start-xs {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
@@ -66,18 +52,6 @@
     -ms-flex-pack: end;
     justify-content: flex-end;
     text-align: end;
-}
-
-.top-xs {
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-}
-
-.middle-xs {
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
 }
 
 .bottom-xs {

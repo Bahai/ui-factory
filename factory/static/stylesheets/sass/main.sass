@@ -1,14 +1,10 @@
 //@import "compass/reset"
 //@import "compass"
 @import "_settings.sass"
-@import "foundation.min.css"
+@include foundation-everything(true)
 @import "flexboxgrid.css"
 @import "_typography.sass"
 
-
-
-//@include foundation-flex-classes
-//@include foundation-flex-grid
 
 $main-color: #FCFCFC
 $secondary-color: #DEDEDC
@@ -45,6 +41,15 @@ section
 footer 
 	background-color: #4C413B
 	padding: 20px 
+
+.text-right
+	text-align: right
+
+.text-left
+	text-align: left
+
+.text-end
+	text-align: end
 
 .starlogo
 	@include logo(50px, "../../img/9pointedstar.png", center, 50px 50px)
@@ -92,12 +97,3 @@ footer
 		margin: 15px 30px
 	.starlogo
 		@include logo(50px, "../../img/BahaiFaithwithStar.png", center, 200px 40px)
-
-@media only screen and (max-width: 48em)
-	.xs-hide
-		display: none
-
-@media only screen and (max-width: 62em)
-	.sm-hide
-		display: none
-

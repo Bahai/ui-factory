@@ -45,6 +45,7 @@
 
 // 1. Global
 // ---------
+@import 'foundation'
 
 $global-font-size: 100%
 $global-width: rem-calc(1200)
@@ -69,7 +70,7 @@ $global-weight-normal: normal
 $global-weight-bold: bold
 $global-radius: 0
 $global-text-direction: ltr
-$global-flexbox: false
+$global-flexbox: true
 $print-transparent-backgrounds: true
 
 //@include add-foundation-colors
@@ -83,6 +84,9 @@ $breakpoint-classes: (small medium large)
 
 // 3. The Grid
 // -----------
+
+@include foundation-flex-grid;
+@include foundation-flex-classes;
 
 $grid-row-width: $global-width
 $grid-column-count: 12
