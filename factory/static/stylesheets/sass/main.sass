@@ -1,7 +1,7 @@
 //@import "compass/reset"
 //@import "compass"
 @import "_settings.sass"
-@import "foundation"
+@import "foundation.min.css"
 @import "flexboxgrid.css"
 @import "_typography.sass"
 
@@ -47,7 +47,7 @@ footer
 	padding: 20px 
 
 .starlogo
-	@include logo(50px, "../img/9pointedstar.png", center, 50px 50px)
+	@include logo(50px, "../../img/9pointedstar.png", center, 50px 50px)
 
 .icon
 	padding: 5px
@@ -74,19 +74,19 @@ footer
 	section
 		margin: 15px 20px
 	.starlogo
-		@include logo(50px, "../img/BahaiFaithwithStar.png", center, 200px 40px)
+		@include logo(50px, "../../img/BahaiFaithwithStar.png", center, 200px 40px)
 
 @media only screen and (min-width: 62em) //tablets
 	section
 		margin: 15px 20px
 	.starlogo
-		@include logo(50px, "../img/BahaiFaithwithStar.png", center, 200px 40px)
+		@include logo(50px, "../../img/BahaiFaithwithStar.png", center, 200px 40px)
 
 @media only screen and (min-width: 75em) //laptops and desktops
 	section
 		margin: 15px 30px
 	.starlogo
-		@include logo(50px, "../img/BahaiFaithwithStar.png", center, 200px 40px)
+		@include logo(50px, "../../img/BahaiFaithwithStar.png", center, 200px 40px)
 
 @media only screen and (max-width: 48em)
 	.xs-hide
