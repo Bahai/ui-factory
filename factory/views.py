@@ -19,7 +19,7 @@ def login(request):
 def loginhelp(request):
     return render(request, 'login/help.html', {})
 
-def loginregister(request):
+def register(request):
     return render(request, 'login/register.html', {})
 
 def loginreset(request):

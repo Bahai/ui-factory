@@ -1,4 +1,5 @@
-{% extends '../factory/base.html' %} {% block content %}
+{% extends '../factory/base.html' %} {% block globalbreadcrumbs %}
+<span class="column"><a href="/">Home</a> / <a href="/login">Login</a></span> {% endblock globalbreadcrumbs %}{% block content %}
 
 <body>
     <h1>Reset your Password</h1>
@@ -8,7 +9,7 @@
         <input type="text">Security Question 2 (answers are case sensative)
         <button>Submit</button>
     </form>
-    <a href="help.html">Having Trouble?</a>
+    <a href="/loginhelp">Having Trouble?</a>
 
 </body>
 

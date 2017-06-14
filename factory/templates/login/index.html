@@ -1,19 +1,21 @@
-{% extends '../factory/base.html' %} {% block content %}
+{% extends '../factory/base.html' %} {% block globalbreadcrumbs %}
+<span class="column"><a href="/">Home</a></span> {% endblock globalbreadcrumbs %}{% block content %}
 
 <body>
-    <h1>Login</h1>
-    <section id="login">
-        <form action="submit">
-            <label for="bahai-id">Bahá'í ID</label>
-            <input placeholder='00123456' type="text" name='bahai-id' id='bahai-id' />
-            <label for="password">Password</label>
-            <input placeholder='password' type="text" name='password' id='password' />
-            <input type="submit" value="Login">
-            <button type="link" href="register.html">Register</button>
-        </form>
-    </section>
-    <a href="help.html">Having Trouble?</a>
-
+    <main>
+        <h1>Login</h1>
+        <section id="login">
+            <form action="submit">
+                <label for="bahai-id">Bahá'í ID</label>
+                <input placeholder='00123456' type="text" name='bahai-id' id='bahai-id' />
+                <label for="password">Password</label>
+                <input placeholder='password' type="text" name='password' id='password' />
+                <input type="submit" value="Login">
+                <a href="/register">Register</a>
+            </form>
+        </section>
+        <a href="/loginhelp">Having Trouble?</a>
+    </main>
 </body>
 
 {% endblock %}

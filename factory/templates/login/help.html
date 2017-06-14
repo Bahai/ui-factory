@@ -1,4 +1,5 @@
-{% extends '../factory/base.html' %} {% block content %}
+{% extends '../factory/base.html' %} {% block globalbreadcrumbs %}
+<span class="column"><a href="/">Home</a> / <a href="/login">Login</a></span> {% endblock globalbreadcrumbs %}{% block content %}
 
 <body>
     <h1>Having trouble with the Login?</h1>
@@ -7,7 +8,7 @@
         <strong>What is my Bahá'í ID number?</strong><br> You can find your Bahá'í ID on your ID card or by contacting ___
     </p>
     <p>
-        <strong>I forgot my password.</strong><br> You may answer your security questions to have a temporary password emailed to you by filling out <a href="reset.html">this form.</a>
+        <strong>I forgot my password.</strong><br> You may answer your security questions to have a temporary password emailed to you by filling out <a href="/passwordreset">this form.</a>
     </p>
     <p>
         <strong>I'm getting an error message.</strong><br>
@@ -15,7 +16,7 @@
             <li><strong>Invalid Request Token: </strong>First, clear your browser cache and/or history. Second, close your internet browser completely and reopen it. Third, type bahai.us directly into the address bar at the top and hit enter. Use the "Sign
                 In" option in the menu in the upper right corner to login. To avoid this error in the future, we suggest not bookmarking the loging page but instead bookmarking bahai.us.</li>
             <li><strong>Invalid ID or password: </strong>Make sure that you have typed in your ID password correctly rememberting that the password is case sensative and try again. Keep in mind that three unsuccessful login attempts will temporarily lock
-                your account. You may <a href="reset.html">reset your password</a>.</li>
+                your account. You may <a href="/passwordreset">reset your password</a>.</li>
             <li><strong>Other Error: </strong></li>
         </ul>
     </p>
