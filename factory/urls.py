@@ -6,7 +6,8 @@ urlpatterns = [
     url(r'^tabhome', views.TAB_index, name='TAB'),
     url(r'^tabarticle', views.TAB_article, name='TAB_article'),
     url(r'^login', views.login, name='login'),
-    url(r'^loginhelp', views.login, name='loginhelp'),
-    url(r'^register', views.login, name='register'),
-    url(r'^passwordreset', views.login, name='loginreset'),
+    url(r'^help', views.help, name='help'),
+    url(r'^register', views.register, name='register'),
+    url(r'^passwordreset', views.loginreset, name='loginreset'),
+    url(r'^contact', views.contact, name='contact'),
 ]

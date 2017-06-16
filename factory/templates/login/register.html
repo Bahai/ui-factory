@@ -2,15 +2,19 @@
 <span class="column"><a href="/">Home</a> / <a href="/login">Login</a></span>{% endblock globalbreadcrumbs %}{% block content %}
 
 <body>
-    <h1>Register for a Baha'i Online Services Account</h1>
-    <form action="submit">
-        <input type="text">Bahá'í ID
-        <input type="text">Password
-        <input type="text">Re-Type Password
-        <button>Register</button>
-    </form>
-    <a href="/loginhelp">Having Trouble?</a>
-
+    <main>
+        <h1>Register for a Baha'i Online Services Account</h1>
+        <form action="submit">
+            <label for="BID">Bahá'í ID</label>
+            <input type="number" id="BID" placeholder="Bahá'í ID">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password">
+            <label for="repassword">Re-Type Password</label>
+            <input type="password" id="repassword" placeholder="Re-Type Password">
+            <button class="button" type="submit">Register</button>
+        </form>
+        <a href="/loginhelp">Having Trouble?</a>
+    </main>
 </body>
 
 {% endblock %}

@@ -2,15 +2,19 @@
 <span class="column"><a href="/">Home</a> / <a href="/login">Login</a></span> {% endblock globalbreadcrumbs %}{% block content %}
 
 <body>
-    <h1>Reset your Password</h1>
-    <form action="submit">
-        <input type="text">Baha'i ID
-        <input type="text">Security Question 1 (answers are case sensative)
-        <input type="text">Security Question 2 (answers are case sensative)
-        <button>Submit</button>
-    </form>
-    <a href="/loginhelp">Having Trouble?</a>
-
+    <main>
+        <h1>Reset your Password</h1>
+        <form action="submit">
+            <label for="BID">Bahá'í ID</label>
+            <input type="number" id="BID" placeholder="00123456">
+            <label for="sq1">Security Question 1</label>
+            <input type="text" id="sq1" placeholder="answers are case sensative">
+            <label for="sq2">Security Question 1</label>
+            <input type="text" id="sq2" placeholder="answers are case sensative">
+            <button class="button" type="submit">Submit</button>
+        </form>
+        <a href="/loginhelp">Having Trouble?</a>
+    </main>
 </body>
 
 {% endblock %}

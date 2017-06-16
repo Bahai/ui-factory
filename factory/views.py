@@ -16,7 +16,7 @@ def TAB_article(request):
 def login(request):
     return render(request, 'login/index.html', {})
 
-def loginhelp(request):
+def help(request):
     return render(request, 'login/help.html', {})
 
 def register(request):
@@ -24,3 +24,6 @@ def register(request):
 
 def loginreset(request):
     return render(request, 'login/reset.html', {})
+
+def contact(request):
+    return render(request, 'login/contact.html', {})

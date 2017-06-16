@@ -1,0 +1,27 @@
+{% extends '../factory/base.html' %} {% block globalbreadcrumbs %}
+<span class="column"><a href="/">Home</a> / <a href="/login">Login</a></span> {% endblock globalbreadcrumbs %}{% block content %}
+
+<body>
+    <main>
+        <h1>Contact Us</h1>
+        <ul>
+            <li>Email: <a href="mailto:weba@bahai.us">web@bahai.us</a></li>
+            <li>Phone: <a href="tel:18477333400">(847) 733-3400</a></li>
+
+            <li>
+                <address class="">
+                <p>Bahá'í National Center<br/> 1233 Central Street<br/> Evanston IL, 60201<br/></p>
+                <p><a href="tel:18477333400">(847) 733-3400</a></p>
+                </address>
+            </li>
+            <li>
+                <address class="">
+                <p>Bahá'í House of Worship<br/> 100 Linden Ave<br/> Wilmette, IL 60091<br/></p>
+                <p><a href="tel:18478532300">(847) 853-2300</a></p>
+                </address>
+            </li>
+        </ul>
+        <form action="submit"></form>
+    </main>
+</body>
+{% endblock %}
