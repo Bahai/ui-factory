@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'factory',
-    'ui',
 
         # 3rd party Django apps
     'wagtail.wagtailforms',
