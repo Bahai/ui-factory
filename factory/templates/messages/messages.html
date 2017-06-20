@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block sectionheader %}
+<h1 class="message-header">Messages and Letters</h1>
+<div class="container">
+  <form role="form" class="layout horizontal center" id="desktopSearchForm" action="{% url 'search' %}" method="get">
+    <div class="flex message-icon"><iron-icon class="" type="submit" icon="search"></iron-icon></div>
+    <input id="desktopSearch" class="message-search flex-6" type="text" name="query" placeholder="Search the Library">
+    <label for="desktopSearch" class=""></label>
+  </form>
+</div>
+{% endblock sectionheader %}
+
+{% block content %}
+<div><a class="add-page" href="#">Add Message</a></div>
+{% for new in new_messages %}
+  <bahai-messagecard docid="{{ new.id }}"></bahai-messagecard>
+{% endfor %}
+
+  
+
+{% endblock content %}

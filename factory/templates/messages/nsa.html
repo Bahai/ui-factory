@@ -1,0 +1,96 @@
+ {% extends '../factory/base.html' %} {% load wagtailcore_tags %} {% load wagtailimages_tags %} {% load static %} {% block globalbreadcrumbs %}
+<span class="column"><a href="/">Home</a> / <a href="{% url 'messages' %}">Messages</a> / <a href="{% url 'National_Spiritual_Assembly' %}">National Spiritual Assembly</a></span> {% endblock globalbreadcrumbs %} {% block content %}
+<main>
+    <h1>National Spiritual Assembly</h1>
+    <label for="messagessearch"></label>
+    <form action="">
+        <div class="input-group">
+            <span class="input-group-label fi-magnifying-glass"></span>
+            <input class="input-group-field col-xs-6" id="messagessearch" placeholder="Search the Message Library" aria-describedby="Search Messages">
+            <a class="input-group-button button">Search</a>
+        </div>
+    </form>
+
+    <ul class="dropdown menu" data-dropdown-menu>
+        <li class="has-submenu">
+            <a href="#0">Author</a>
+            <ul class="submenu menu vertical" data-submenu>
+                <li><a href="/messages/universal-house-of-justice">Universal House of Justice</a></li>
+                <li><a href="/messages/national-spiritual-assembly">National Spiritual Assembly</a></li>
+                <li><a href="/messages/feast">Feast</a></li>
+                <li><a href="/messages/special">Special</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <section id="">
+        <div class="row">
+            <h4 class="col-xs start-xs container">Avoidance of Partisan Politics Stressed</h4>
+            <h6 class="col-xs end-xs">10 March 2016</h6>
+        </div>
+        <div class="row">
+            <div class="col-xs container">
+                <p>We direct your attention to a letter from the National Spiritual Assembly stressing -- for all Bahá'ís – the importance of avoiding partisan politics.
+                    <br>Note that the letter is supplemented by a message from the Universal House of Justice, addressed to the Bahá'ís of Iran and provided in English, Persian, and Spanish. The message, which takes up this same subject, is commended
+                    to your further study and reflection.
+                    <br>All four of the documents are provided in PDF form for your ease of access and printing.</p>
+            </div>
+            <div class="col-xs end-xs">
+                <ul class="downloads">
+                    <li><a href="">English PDF</a></li>
+                    <li><a href="">English DOC</a></li>
+                    <li><a href="">Spanish PDF</a></li>
+                    <li><a href="">Spanish DOC</a></li>
+                    <li><a href="">Persian PDF</a></li>
+                </ul>
+            </div>
+    </section>
+    <section id="">
+        <div class="row">
+            <h4 class="col-xs start-xs container">Avoidance of Partisan Politics Stressed</h4>
+            <h6 class="col-xs end-xs">10 March 2016</h6>
+        </div>
+        <div class="row">
+            <div class="col-xs container">
+                <p>We direct your attention to a letter from the National Spiritual Assembly stressing -- for all Bahá'ís – the importance of avoiding partisan politics.
+                    <br>Note that the letter is supplemented by a message from the Universal House of Justice, addressed to the Bahá'ís of Iran and provided in English, Persian, and Spanish. The message, which takes up this same subject, is commended
+                    to your further study and reflection.
+                    <br>All four of the documents are provided in PDF form for your ease of access and printing.</p>
+            </div>
+            <div class="col-xs end-xs">
+                <ul class="downloads">
+                    <li><a href="">English PDF</a></li>
+                    <li><a href="">English DOC</a></li>
+                    <li><a href="">Spanish PDF</a></li>
+                    <li><a href="">Spanish DOC</a></li>
+                    <li><a href="">Persian PDF</a></li>
+                </ul>
+            </div>
+    </section>
+    <section id="">
+        <div class="row">
+            <h4 class="col-xs start-xs container">Avoidance of Partisan Politics Stressed</h4>
+            <h6 class="col-xs end-xs">10 March 2016</h6>
+        </div>
+        <div class="row">
+            <div class="col-xs container">
+                <p>We direct your attention to a letter from the National Spiritual Assembly stressing -- for all Bahá'ís – the importance of avoiding partisan politics.
+                    <br>Note that the letter is supplemented by a message from the Universal House of Justice, addressed to the Bahá'ís of Iran and provided in English, Persian, and Spanish. The message, which takes up this same subject, is commended
+                    to your further study and reflection.
+                    <br>All four of the documents are provided in PDF form for your ease of access and printing.</p>
+            </div>
+            <div class="col-xs end-xs">
+                <ul class="downloads">
+                    <li><a href="">English PDF</a></li>
+                    <li><a href="">English DOC</a></li>
+                    <li><a href="">Spanish PDF</a></li>
+                    <li><a href="">Spanish DOC</a></li>
+                    <li><a href="">Persian PDF</a></li>
+                </ul>
+            </div>
+    </section>
+</main>
+
+{% endblock content %}

@@ -1,0 +1,78 @@
+{% extends '../factory/base.html' %} {% load wagtailcore_tags %} {% load wagtailimages_tags %} {% load static %} {% block globalbreadcrumbs %}
+<span class="column"><a href="/">Home</a> / <a href="{% url 'messages' %}">Messages</a> / <a href="{% url 'special' %}">Special</a></span> {% endblock globalbreadcrumbs %} {% block content %}
+<main>
+    <h1>Special</h1>
+    <label for="messagessearch"></label>
+    <form action="">
+        <div class="input-group">
+            <span class="input-group-label fi-magnifying-glass"></span>
+            <input class="input-group-field col-xs-6" id="messagessearch" placeholder="Search the Message Library" aria-describedby="Search Messages">
+            <a class="input-group-button button">Search</a>
+        </div>
+    </form>
+
+    <ul class="dropdown menu" data-dropdown-menu>
+        <li class="has-submenu">
+            <a href="#0">Author</a>
+            <ul class="submenu menu vertical" data-submenu>
+                <li><a href="/messages/universal-house-of-justice">Universal House of Justice</a></li>
+                <li><a href="/messages/national-spiritual-assembly">National Spiritual Assembly</a></li>
+                <li><a href="/messages/feast">Feast</a></li>
+                <li><a href="/messages/special">Special</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <section id="">
+        <div class="row">
+            <h4 class="col-xs start-xs container">On the Dedication of the Bahá’í House of Worship in Chile</h4>
+            <h6 class="col-xs end-xs">22 September 2016</h6>
+        </div>
+        <div class="row">
+            <div class="col-xs container">
+                <p>We direct your attention to a letter from the National Spiritual Assembly providing up-to-date information on the upcoming dedication of the Bahá’í House of Worship in Santiago, Chile.
+                    <br>Details are supplied in the Assembly’s letter.</p>
+            </div>
+            <div class="col-xs end-xs">
+                <ul class="downloads">
+                    <li><a href="">English PDF</a></li>
+                </ul>
+            </div>
+    </section>
+    <section id="">
+        <div class="row">
+            <h4 class="col-xs start-xs container">On the Dedication of the Bahá’í House of Worship in Chile</h4>
+            <h6 class="col-xs end-xs">22 September 2016</h6>
+        </div>
+        <div class="row">
+            <div class="col-xs container">
+                <p>We direct your attention to a letter from the National Spiritual Assembly providing up-to-date information on the upcoming dedication of the Bahá’í House of Worship in Santiago, Chile.
+                    <br>Details are supplied in the Assembly’s letter.</p>
+            </div>
+            <div class="col-xs end-xs">
+                <ul class="downloads">
+                    <li><a href="">English PDF</a></li>
+                </ul>
+            </div>
+    </section>
+    <section id="">
+        <div class="row">
+            <h4 class="col-xs start-xs container">On the Dedication of the Bahá’í House of Worship in Chile</h4>
+            <h6 class="col-xs end-xs">22 September 2016</h6>
+        </div>
+        <div class="row">
+            <div class="col-xs container">
+                <p>We direct your attention to a letter from the National Spiritual Assembly providing up-to-date information on the upcoming dedication of the Bahá’í House of Worship in Santiago, Chile.
+                    <br>Details are supplied in the Assembly’s letter.</p>
+            </div>
+            <div class="col-xs end-xs">
+                <ul class="downloads">
+                    <li><a href="">English PDF</a></li>
+                </ul>
+            </div>
+    </section>
+</main>
+
+{% endblock content %}

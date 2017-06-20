@@ -14,7 +14,7 @@ def TAB_article(request):
     return render(request, 'TAB/blog_page.html', {})
 
 def TAB_base(request):
-    return render(request, 'TAB/tabindex.html')
+    return render(request, 'TAB/tabindex.html', {})
 
 def login(request):
     return render(request, 'login/index.html', {})
@@ -30,3 +30,6 @@ def loginreset(request):
 
 def contact(request):
     return render(request, 'login/contact.html', {})
+
+def messages(request):
+    return render(request, 'messages/message-collection.html', {})

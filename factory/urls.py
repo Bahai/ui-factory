@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^register', views.register, name='register'),
     url(r'^passwordreset', views.loginreset, name='loginreset'),
     url(r'^contact', views.contact, name='contact'),
+    url(r'^messages', views.messages, name='messages'),
 ]
