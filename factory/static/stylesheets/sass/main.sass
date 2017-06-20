@@ -31,23 +31,20 @@ nav
 	max-height: 60px
 
 main 
-	background-color: $secondary-color
+	background-color: $main-color
 	padding: 20px
-
-section	
-	margin: 15px 10px
-	padding: 10px
 
 footer 
 	background-color: #4C413B
 	padding: 20px 
 
 article
-	background-color: $main-color
+	background-color: $secondary-color
+	padding-top: 5px
 
 .article-box
-	padding-top: 2px
-	padding-bottom: 2px
+	padding-top: 5px
+	padding-bottom: 5px
 
 .text-right
 	text-align: right
@@ -75,6 +72,10 @@ article
 .search
 	height: 1.5em
 
+.tab-img
+	padding-left: 8px
+	padding-right: 0px
+
 .downloads
 	margin-left: 0
 
@@ -91,21 +92,15 @@ article
 	white-space: nowrap
 
 @media only screen and (min-width: 48em) //phones
-	section
-		margin: 15px 20px
 	.starlogo
 		@include logo(50px, "../../img/BahaiFaithwithStar.png", center, 200px 40px)
 	.footeraddress
 		text-align: center
 
 @media only screen and (min-width: 62em) //tablets
-	section
-		margin: 15px 20px
 	.starlogo
 		@include logo(50px, "../../img/BahaiFaithwithStar.png", center, 200px 40px)
 
 @media only screen and (min-width: 75em) //laptops and desktops
-	section
-		margin: 15px 30px
 	.starlogo
 		@include logo(50px, "../../img/BahaiFaithwithStar.png", center, 200px 40px)
