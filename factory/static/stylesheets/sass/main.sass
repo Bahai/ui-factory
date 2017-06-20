@@ -1,11 +1,11 @@
-@import "compass/reset"
-@import "compass"
+//@import "compass/reset"
+//@import "compass"
 @import "_settings.sass"
-@import "foundation"
-@include foundation-everything(true)
+//@import "foundation"
+//@include foundation-everything(true)
 //@include foundation-flex-grid;
 //@include foundation-flex-classes;
-//@import "foundation.css"
+@import "foundation.css"
 @import "_typography.sass"
 
 
@@ -44,7 +44,10 @@ footer
 
 article
 	background-color: $main-color
-	border: 2px solid black
+
+.article-box
+	padding-top: 2px
+	padding-bottom: 2px
 
 .text-right
 	text-align: right
