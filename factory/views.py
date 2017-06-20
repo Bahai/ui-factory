@@ -13,6 +13,9 @@ def TAB_index(request):
 def TAB_article(request):
     return render(request, 'TAB/blog_page.html', {})
 
+def TAB_base(request):
+    return render(request, 'TAB/tabindex.html')
+
 def login(request):
     return render(request, 'login/index.html', {})
 

@@ -1,7 +1,11 @@
-//@import "compass/reset"
-//@import "compass"
+@import "compass/reset"
+@import "compass"
 @import "_settings.sass"
+@import "foundation"
 @include foundation-everything(true)
+//@include foundation-flex-grid;
+//@include foundation-flex-classes;
+//@import "foundation.css"
 @import "_typography.sass"
 
 
@@ -30,16 +34,17 @@ main
 	background-color: $secondary-color
 	padding: 20px
 
-section
-	background-color: $main-color
+section	
 	margin: 15px 10px
 	padding: 10px
-	box-shadow: 0 0 1em $nav-color
-	border-radius: 0.5em
 
 footer 
 	background-color: #4C413B
 	padding: 20px 
+
+article
+	background-color: $main-color
+	border: 2px solid black
 
 .text-right
 	text-align: right
