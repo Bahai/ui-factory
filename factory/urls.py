@@ -12,4 +12,9 @@ urlpatterns = [
     url(r'^passwordreset', views.loginreset, name='loginreset'),
     url(r'^contact', views.contact, name='contact'),
     url(r'^messages', views.messages, name='messages'),
+    url(r'^Universal_House_of_Justice', views.Universal_House_of_Justice, name='Universal_House_of_Justice'),
+    url(r'^National_Spiritual_Assembly', views.National_Spiritual_Assembly, name='National_Spiritual_Assembly'),
+    url(r'^feast', views.feast, name='feast'),
+    url(r'^special', views.special, name='special'),
+
 ]

@@ -33,3 +33,15 @@ def contact(request):
 
 def messages(request):
     return render(request, 'messages/message-collection.html', {})
+
+def Universal_House_of_Justice(request):
+    return render(request, 'messages/uhj.html', {})
+
+def National_Spiritual_Assembly(request):
+    return render(request, 'messages/nsa.html', {})
+
+def feast(request):
+    return render(request, 'messages/feast.html', {})
+    
+def special(request):
+    return render(request, 'messages/special.html', {})
