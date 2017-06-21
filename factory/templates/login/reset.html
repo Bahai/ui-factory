@@ -1,5 +1,5 @@
 {% extends '../factory/base.html' %} {% block globalbreadcrumbs %}
-<span class="column"><a href="/">Home</a> / <a href="/login">Login</a></span> {% endblock globalbreadcrumbs %}{% block content %}
+<span class="column"><a href="/">Home</a> / <a href="{% url 'login' %}">Login</a></span> {% endblock globalbreadcrumbs %}{% block content %}
 
 <body>
     <main>
@@ -13,7 +13,7 @@
             <input type="text" id="sq2" placeholder="answers are case sensative">
             <button class="button" type="submit">Submit</button>
         </form>
-        <a href="/loginhelp">Having Trouble?</a>
+        <a href="{% url 'help' %}">Having Trouble?</a>
     </main>
 </body>
 

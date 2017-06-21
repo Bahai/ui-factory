@@ -4594,7 +4594,7 @@ a.thumbnail image {
 }
 
 .row {
-    max-width: 62.5rem;
+    /*max-width: 62.5rem;*/
     margin-right: auto;
     margin-left: auto;
     display: -ms-flexbox;

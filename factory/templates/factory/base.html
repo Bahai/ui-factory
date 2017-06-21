@@ -37,15 +37,15 @@
     <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas>
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/tabhome">Community News</a></li>
-            <li><a href="/messages">Messages</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'tabhome' %}">Community News</a></li>
+            <li><a href="{% url 'messages' %}">Messages</a></li>
         </ul>
     </div>
     <div class="off-canvas-content" data-off-canvas-content>
         <header>
             <nav class="row menu expanded align-middle" data-toggle="offCanvas">
-                <span class="column text-right">
+                <span class="column text-right hide-for-large">
                     <div class="row align-middle">
                         <span class="icon fi-list"></span>
                 <span class="pcontrast">Menu</span>
@@ -58,7 +58,7 @@
         <div class="row align-middle text-end hide-for-small-only">
             <span class="column icon fi-magnifying-glass"></span>
             <input type="text" name="query" placeholder="Search" class="column search" />
-            <span class="column register show-for-large"><a class="acontrast" href="/login">Login</a> | <a class="acontrast" href="/register">Register</a></span>
+            <span class="column register show-for-large"><a class="acontrast" href="{% url 'login' %}">Login</a> | <a class="acontrast" href="{% url 'register' %}">Register</a></span>
         </div>
     </div>
     </nav>
@@ -87,7 +87,7 @@
                 <a class="acontrast" href="tel:18478532300">(847) 853-2300</a>
             </address>
         </div>
-        <div class="row align-center acontrast footer-row hide-for-large"><a href="/contact">Contact Us</a></div>
+        <div class="row align-center acontrast footer-row hide-for-large"><a href="{% url 'contact' %}">Contact Us</a></div>
         <div class="row align-center copyright pcontrast">
             <p>&copy; 2017 National Spiritual Assembly of the Bahá'ís of the United States</p>
         </div>
