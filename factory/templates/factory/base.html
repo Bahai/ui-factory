@@ -35,7 +35,8 @@
 <body>
 
     <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas>
-        <ul class="off-canvas-menu">
+        <ul class="plain-list">
+            <li class="off-canvas-menu-item login show-for-small-only"><a href="{% url 'login' %}">Sign In</a></li>
             <li class="off-canvas-menu-item"><a href="/">Home</a></li>
             <li class="off-canvas-menu-item"><a href="{% url 'login' %}">Login</a></li>
             <li class="off-canvas-menu-item"><a href="{% url 'TAB' %}">Community News</a></li>

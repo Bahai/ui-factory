@@ -32,7 +32,7 @@ def contact(request):
     return render(request, 'login/contact.html', {})
 
 def messages(request):
-    return render(request, 'messages/message-collection.html', {})
+    return render(request, 'messages/messages.html', {})
 
 def Universal_House_of_Justice(request):
     return render(request, 'messages/uhj.html', {})

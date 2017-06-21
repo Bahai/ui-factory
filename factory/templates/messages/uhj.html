@@ -3,10 +3,10 @@
 <main>
     <h1>Universal House of Justice</h1>
     <label for="messagessearch"></label>
-    <form action="">
-        <div class="input-group">
-            <span class="input-group-label fi-magnifying-glass"></span>
-            <input class="input-group-field col-xs-6" id="messagessearch" placeholder="Search the Message Library" aria-describedby="Search Messages">
+    <form action="submit">
+        <div class="row align-middle input-group">
+            <span class="search input-group-label fi-magnifying-glass"></span>
+            <input class="search input-group-field col-xs-6" id="messagessearch" placeholder="Search the Message Library" aria-describedby="Search Messages">
             <a class="input-group-button button">Search</a>
         </div>
     </form>
@@ -15,79 +15,76 @@
         <li class="has-submenu">
             <a href="#0">Author</a>
             <ul class="submenu menu vertical" data-submenu>
-                <li><a href="/messages/universal-house-of-justice">Universal House of Justice</a></li>
-                <li><a href="/messages/national-spiritual-assembly">National Spiritual Assembly</a></li>
-                <li><a href="/messages/feast">Feast</a></li>
-                <li><a href="/messages/special">Special</a></li>
+                <li><a href="{% url 'Universal_House_of_Justice' %}">Universal House of Justice</a></li>
+                <li><a href="{% url 'National_Spiritual_Assembly' %}">National Spiritual Assembly</a></li>
+                <li><a href="{% url 'feast' %}">Feast</a></li>
+                <li><a href="{% url 'special' %}">Special</a></li>
             </ul>
         </li>
     </ul>
 
     <hr>
 
-    <section id="">
-        <div class="row">
-            <h4 class="col-xs start-xs container">Supreme Body Greets Participants in Dedication of Mother Temple of South America</h4>
-            <h6 class="col-xs end-xs">14 October 2016</h6>
+    <article id="" class="small-12 article-box">
+        <div class="row align-middle">
+            <h4 class="column small-9 text-left container">Supreme Body Greets Participants in Dedication of Mother Temple of South America</h4>
+            <h6 class="column small-3 text-right">14 October 2016</h6>
         </div>
         <div class="row">
-            <div class="col-xs container">
+            <div class="coulmn small-9 summary">
                 <p>We are pleased to make available to you electronically a message from the Universal House of Justice released today, October 14, and addressed to the friends gathered in Santiago for the dedication of the newly completed Bahá’í House of
                     Worship of Chile, the Mother Temple of the South American continent.
                     <br> The message is provided in English and in French and Spanish translations. Additional translations will be posted as they become available.</p>
             </div>
-            <div class="col-xs end-xs">
-                <ul class="downloads">
+            <div class="coulmn small-3 text-right">
+                <ul class="plain-list">
                     <li><a href="">English PDF</a></li>
-                    <li><a href="">English DOC</a></li>
                     <li><a href="">Spanish PDF</a></li>
-                    <li><a href="">Spanish DOC</a></li>
                     <li><a href="">Persian PDF</a></li>
+                    <li><a href="">French PDF</a></li>
                 </ul>
             </div>
-    </section>
-    <section id="">
-        <div class="row">
-            <h4 class="col-xs start-xs container">Supreme Body Greets Participants in Dedication of Mother Temple of South America</h4>
-            <h6 class="col-xs end-xs">14 October 2016</h6>
+    </article>
+    <article id="" class="small-12 article-box">
+        <div class="row align-middle">
+            <h4 class="column small-9 text-left container">Supreme Body Greets Participants in Dedication of Mother Temple of South America</h4>
+            <h6 class="column small-3 text-right">14 October 2016</h6>
         </div>
         <div class="row">
-            <div class="col-xs container">
+            <div class="coulmn small-9 summary">
                 <p>We are pleased to make available to you electronically a message from the Universal House of Justice released today, October 14, and addressed to the friends gathered in Santiago for the dedication of the newly completed Bahá’í House of
                     Worship of Chile, the Mother Temple of the South American continent.
                     <br> The message is provided in English and in French and Spanish translations. Additional translations will be posted as they become available.</p>
             </div>
-            <div class="col-xs end-xs">
-                <ul class="downloads">
+            <div class="coulmn small-3 text-right">
+                <ul class="plain-list">
                     <li><a href="">English PDF</a></li>
-                    <li><a href="">English DOC</a></li>
                     <li><a href="">Spanish PDF</a></li>
-                    <li><a href="">Spanish DOC</a></li>
                     <li><a href="">Persian PDF</a></li>
+                    <li><a href="">French PDF</a></li>
                 </ul>
             </div>
-    </section>
-    <section id="">
-        <div class="row">
-            <h4 class="col-xs start-xs container">Supreme Body Greets Participants in Dedication of Mother Temple of South America</h4>
-            <h6 class="col-xs end-xs">14 October 2016</h6>
+    </article>
+    <article id="" class="small-12 article-box">
+        <div class="row align-middle">
+            <h4 class="column small-9 text-left container">Supreme Body Greets Participants in Dedication of Mother Temple of South America</h4>
+            <h6 class="column small-3 text-right">14 October 2016</h6>
         </div>
         <div class="row">
-            <div class="col-xs container">
+            <div class="coulmn small-9 summary">
                 <p>We are pleased to make available to you electronically a message from the Universal House of Justice released today, October 14, and addressed to the friends gathered in Santiago for the dedication of the newly completed Bahá’í House of
                     Worship of Chile, the Mother Temple of the South American continent.
                     <br> The message is provided in English and in French and Spanish translations. Additional translations will be posted as they become available.</p>
             </div>
-            <div class="col-xs end-xs">
-                <ul class="downloads">
+            <div class="coulmn small-3 text-right">
+                <ul class="plain-list">
                     <li><a href="">English PDF</a></li>
-                    <li><a href="">English DOC</a></li>
                     <li><a href="">Spanish PDF</a></li>
-                    <li><a href="">Spanish DOC</a></li>
                     <li><a href="">Persian PDF</a></li>
+                    <li><a href="">French PDF</a></li>
                 </ul>
             </div>
-    </section>
+    </article>
 </main>
 
 {% endblock content %}

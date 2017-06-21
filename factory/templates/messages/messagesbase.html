@@ -1,0 +1,38 @@
+{% block globalbreadcrumbs %}
+<span class="column"><a href="/">Home</a></span> 
+{% endblock globalbreadcrumbs %}
+
+<header>
+    <h1>Messages</h1>
+    <label for="messagessearch"></label>
+    <form action="submit">
+        <div class="row align-middle input-group">
+            <span class="search input-group-label fi-magnifying-glass"></span>
+            <input class="search input-group-field col-xs-6" id="messagessearch" placeholder="Search the Message Library" aria-describedby="Search Messages">
+            <a class="input-group-button button">Search</a>
+        </div>
+    </form>
+
+    <ul class="dropdown menu" data-dropdown-menu>
+        <li class="has-submenu">
+            <a href="#0">Author</a>
+            <ul class="submenu menu vertical" data-submenu>
+                <li><a href="{% url 'Universal_House_of_Justice' %}">Universal House of Justice</a></li>
+                <li><a href="{% url 'National_Spiritual_Assembly' %}">National Spiritual Assembly</a></li>
+                <li><a href="{% url 'Feast' %}">Feast</a></li>
+                <li><a href="{% url 'Special' %}">Special</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <button type="button" class="add-page button">Add Message</button>
+</header>
+
+<script>
+    $('.edit').click(function() {
+        var id = $(this).attr('id');
+        return editpage(id);
+    });
+</script>

@@ -42,8 +42,8 @@ article
 	padding-top: 5px
 
 .article-box
-	padding-top: 5px
-	padding-bottom: 5px
+	margin-top: 5px
+	margin-bottom: 5px
 
 .text-right
 	text-align: right
@@ -71,9 +71,12 @@ article
 .search
 	height: 1.5em
 
-.off-canvas-menu
+.plain-list
 	list-style: none
 	margin-left: 0px
+
+.off-canvas
+	background-color: $nav-color
 
 .off-canvas-menu-item
 	background-color: $nav-color
@@ -84,13 +87,13 @@ article
 		text-decoration: none
 	&:hover
 			background-color: $font-color-primary
+.login
+	text-align: center
+	background-color: $primary-color
 
 .tab-img
 	padding-left: 8px
 	padding-right: 0px
-
-.downloads
-	margin-left: 0
 
 .footer-row
 	margin-right: 20px
@@ -101,8 +104,12 @@ article
 	font-size: 0.9em
 	padding: 10px
 
-.nowrap
-	white-space: nowrap
+/* Messages */
+
+.summary
+	padding-left: 10px
+	padding-right: 10px
+	
 
 @media only screen and (min-width: 48em) //phones
 	.starlogo
