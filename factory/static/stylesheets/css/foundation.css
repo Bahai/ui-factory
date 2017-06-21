@@ -802,7 +802,6 @@ screen and (min-width: 40em) {
 a {
     line-height: inherit;
     color: #2ba6cb;
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -4594,7 +4593,7 @@ a.thumbnail image {
 }
 
 .row {
-    /*max-width: 62.5rem;*/
+    max-width: 62.5rem;
     margin-right: auto;
     margin-left: auto;
     display: -ms-flexbox;

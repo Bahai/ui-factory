@@ -35,11 +35,11 @@
 <body>
 
     <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="{% url 'login' %}">Login</a></li>
-            <li><a href="{% url 'tabhome' %}">Community News</a></li>
-            <li><a href="{% url 'messages' %}">Messages</a></li>
+        <ul class="off-canvas-menu">
+            <li class="off-canvas-menu-item"><a href="/">Home</a></li>
+            <li class="off-canvas-menu-item"><a href="{% url 'login' %}">Login</a></li>
+            <li class="off-canvas-menu-item"><a href="{% url 'TAB' %}">Community News</a></li>
+            <li class="off-canvas-menu-item"><a href="{% url 'messages' %}">Messages</a></li>
         </ul>
     </div>
     <div class="off-canvas-content" data-off-canvas-content>
@@ -63,7 +63,7 @@
     </div>
     </nav>
     {# BREADCRUMBS #}
-    <div class="row align-middle">{% block globalbreadcrumbs %} {% endblock globalbreadcrumbs %} </div>
+    <div class="row expanded align-middle">{% block globalbreadcrumbs %} {% endblock globalbreadcrumbs %} </div>
     </header>
 
 

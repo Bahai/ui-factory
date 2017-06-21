@@ -26,8 +26,7 @@ $nav-color: #4C413B
 	overflow: hidden
 
 nav 
-	background-color: #4C413B
-	padding: 20px
+	background-color: $nav-color
 	max-height: 60px
 
 main 
@@ -35,7 +34,7 @@ main
 	padding: 20px
 
 footer 
-	background-color: #4C413B
+	background-color: $nav-color
 	padding: 20px 
 
 article
@@ -71,6 +70,20 @@ article
 
 .search
 	height: 1.5em
+
+.off-canvas-menu
+	list-style: none
+	margin-left: 0px
+
+.off-canvas-menu-item
+	background-color: $nav-color
+	border-bottom: 1px solid $font-color-primary
+	padding: 15px
+	a
+		color: $main-color
+		text-decoration: none
+	&:hover
+			background-color: $font-color-primary
 
 .tab-img
 	padding-left: 8px
