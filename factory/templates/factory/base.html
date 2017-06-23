@@ -35,34 +35,36 @@
 <body>
 
     <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas>
-        <ul class="plain-list">
-            <li class="off-canvas-menu-item login show-for-small-only"><a href="{% url 'login' %}">Sign In</a></li>
-            <li class="off-canvas-menu-item"><a href="/">Home</a></li>
-            <li class="off-canvas-menu-item"><a href="{% url 'login' %}">Login</a></li>
-            <li class="off-canvas-menu-item"><a href="{% url 'TAB' %}">Community News</a></li>
-            <li class="off-canvas-menu-item"><a href="{% url 'messages' %}">Messages</a></li>
+        <ul class="plain-list plain-link">
+            <a href="{% url 'login' %}"><li class="off-canvas-menu-item login hide-for-large">Sign In</li></a>
+            <a href="/"><li class="off-canvas-menu-item">Home</li></a>
+            <a href="{% url 'login' %}"><li class="off-canvas-menu-item">Login</li></a>
+            <a href="{% url 'TAB' %}"><li class="off-canvas-menu-item">Community News</li></a>
+            <a href="{% url 'messages' %}"><li class="off-canvas-menu-item">Messages</li></a>
         </ul>
     </div>
     <div class="off-canvas-content" data-off-canvas-content>
         <header>
             <nav class="row menu expanded align-middle" data-toggle="offCanvas">
-                <span class="column text-right hide-for-large">
-                    <div class="row align-middle">
+                <span class="column text-right">
+                    <div class="row align-middle hide-for-large">
                         <span class="icon fi-list"></span>
-                <span class="pcontrast">Menu</span>
-    </div>
-    </span>
-    <div class="column align-center">
-        <a href="/"><span class="starlogo"></span></a>
-    </div>
-    <div class="column">
-        <div class="row align-middle text-end hide-for-small-only">
-            <span class="column icon fi-magnifying-glass"></span>
-            <input type="text" name="query" placeholder="Search" class="column search" />
-            <span class="column register show-for-large"><a class="acontrast" href="{% url 'login' %}">Login</a> | <a class="acontrast" href="{% url 'register' %}">Register</a></span>
-        </div>
-    </div>
-    </nav>
+                        <span class="pcontrast">Menu</span>
+                    </div>
+                </span>
+                <div class="column align-center">
+                    <a href="/"><span class="starlogo"></span></a>
+                </div>
+                <div class="column">
+                    <div class="row align-middle text-end hide-for-small-only">
+                        <span class="column icon fi-magnifying-glass"></span>
+                        <input type="text" name="query" placeholder="Search" class="column search" />
+                        <div class="column register show-for-large">
+                            <a class="acontrast" href="{% url 'login' %}">Login</a> | <a class="acontrast" href="{% url 'register' %}">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
     {# BREADCRUMBS #}
     <div class="row expanded align-middle">{% block globalbreadcrumbs %} {% endblock globalbreadcrumbs %} </div>
     </header>
@@ -77,10 +79,10 @@
                 <p class="pcontrast nowrap">Bahá'í National Center <br/> 1233 Central Street<br/> Evanston IL, 60201<br/></p>
                 <a class="acontrast" href="tel:18477333400">(847) 733-3400</a>
             </address>
-            <div class="column text-center align-center large-4">
+            <div class="column text-center large-4 plain-link">
                 <a class="acontrast" href="http://www.bahai.us/fund">
                     <img src="/static/img/OCSHeartSign.png">
-                    <h4 class="">Brought to you by the<br>National Bahá'í Fund</h4>
+                    <h4 class="">Brought to you by the National Bahá'í Fund</h4>
                 </a>
             </div>
             <address class="column text-right hide-for-small-only large-4">

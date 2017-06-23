@@ -1,10 +1,6 @@
 //@import "compass/reset"
 //@import "compass"
 @import "_settings.sass"
-//@import "foundation"
-//@include foundation-everything(true)
-//@include foundation-flex-grid;
-//@include foundation-flex-classes;
 @import "foundation.css"
 @import "_typography.sass"
 
@@ -45,15 +41,6 @@ article
 	margin-top: 5px
 	margin-bottom: 5px
 
-.text-right
-	text-align: right
-
-.text-left
-	text-align: left
-
-.text-center
-	text-align: center
-
 .text-end
 	text-align: end
 
@@ -74,6 +61,10 @@ article
 .plain-list
 	list-style: none
 	margin-left: 0px
+
+.plain-link
+	a
+		text-decoration: none
 
 .off-canvas
 	background-color: $nav-color

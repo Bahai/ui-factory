@@ -6,7 +6,7 @@
         <h3>Community News</h3>
         <img src="https://c1.staticflickr.com/5/4188/34344570281_b0c8f713b5_o.jpg" alt="Morning devotions with drums at outreach project">
         <h5>Regional Bahá’í Councils at 20</h5>
-        <section class="row">
+        <!--<section class="row">
             <div class="column small-12">
                 {% for page in self.child_pages|slice:"0:2" %}
                 <a href="{{page.slug}}">
@@ -37,10 +37,70 @@
                 </a>
                 {% endfor %}
             </div>
-        </section>
+        </section>-->
 
         <hr>
         <h5>Building Community</h5>
+        <!--<section class="row">
+            <div class="column article-box large-6 medium-6 small-12">
+                {% for page in self.child_pages|slice:"4:5" %}
+                <a href="{{page.slug}}">
+                    <article class="row">
+                        <div class="column tab-img large-2 small-2">
+                            <img src="{{ page.flickr }}" alt="">
+                        </div>
+                        <div class="column large-10 small-10">
+                            <h6>{{ page.title }}</h6>
+                            <p>{{ page.body|striptags|safe|truncatewords:15 }}</p>
+                        </div>
+                    </article>
+                </a>
+                {% endfor %}
+            </div>
+            <div class="column article-box large-6 medium-6 small-12">
+                {% for page in self.child_pages|slice:"5:6" %}
+                <a href="{{page.slug}}">
+                    <article class="row">
+                        <div class="column tab-img large-2 small-2">
+                            <img src="{{page.flickr}}" alt="">
+                        </div>
+                        <div class="column large-10 small-10">
+                            <h6>{{ page.title }}</h6>
+                            <p>{{ page.body|striptags|safe|truncatewords:15 }}</p>
+                        </div>
+                    </article>
+                </a>
+                {% endfor %}
+            </div>
+        </section>-->
+        <section class="row">
+            <div class="column article-box large-6 medium-6 small-12">
+                <a href="#articleview">
+                    <article class="row">
+                        <div class="column tab-img large-2 small-2">
+                            <img src="{% static 'img/spacecat.png' %}" alt="space cat">
+                        </div>
+                        <div class="column large-10 small-10">
+                            <h6>Article Title</h6>
+                            <p>Article summary</p>
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="column article-box large-6 medium-6 small-12">
+                <a href="#articleview">
+                    <article class="row">
+                        <div class="column tab-img large-2 small-2">
+                            <img src="{% static 'img/spacecat.png' %}" alt="space cat">
+                        </div>
+                        <div class="column large-10 small-10">
+                            <h6>Article Title</h6>
+                            <p>Article summary</p>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </section>
         <section class="row">
             <div class="column article-box large-6 medium-6 small-12">
                 <a href="#articleview">
@@ -101,6 +161,38 @@
         </section>
         <hr>
         <h5>In the Life of Society</h5>
+        <!--<section class="row">
+            <div class="column article-box large-6 medium-6 small-12">
+                {% for page in self.child_pages|slice:"6:7" %}
+                <a href="{{page.slug}}">
+                    <article class="row">
+                        <div class="column tab-img large-2 small-2">
+                            <img src="{{page.flickr}}" alt="">
+                        </div>
+                        <div class="column large-10 small-10">
+                            <h6>{{ page.title }}</h6>
+                            <p>{{ page.body|striptags|safe|truncatewords:15 }}</p>
+                        </div>
+                    </article>
+                </a>
+                {% endfor %}
+            </div>
+            <div class="column article-box large-6 medium-6 small-12">
+                {% for page in self.child_pages|slice:"7:8" %}
+                <a href="{{page.slug}}">
+                    <article class="row">
+                        <div class="column tab-img large-2 small-2">
+                            <img src="{{page.flickr}}" alt="">
+                        </div>
+                        <div class="column large-10 small-10">
+                            <h6>{{ page.title }}</h6>
+                            <p>{{ page.body|striptags|safe|truncatewords:15 }}</p>
+                        </div>
+                    </article>
+                </a>
+                {% endfor %}
+            </div>
+        </section>-->
         <section class="row">
             <div class="column article-box large-6 medium-6 small-12">
                 <a href="#articleview">
