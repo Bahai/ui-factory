@@ -45,3 +45,6 @@ def Feast(request):
     
 def Special(request):
     return render(request, 'messages/special.html', {})
+
+def letter(request):
+    return render(request, 'messages/letter.html', {})

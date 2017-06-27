@@ -16,5 +16,5 @@ urlpatterns = [
     url(r'^National_Spiritual_Assembly', views.National_Spiritual_Assembly, name='National_Spiritual_Assembly'),
     url(r'^Feast', views.Feast, name='Feast'),
     url(r'^Special', views.Special, name='Special'),
-
+    url(r'^letter', views.letter, name='letter'),
 ]

@@ -6,17 +6,15 @@
 {% endblock globalbreadcrumbs %}
 
 {% block local_header %}
-<main>
-    <h1>Messages</h1>
+<div class="section_header">
     <label for="messagessearch"></label>
     <form action="submit">
         <div class="row align-middle input-group">
             <span class="message-search input-group-label fi-magnifying-glass"></span>
             <input class="message-search input-group-field col-xs-6" id="messagessearch" placeholder="Search the Message Library" aria-describedby="Search Messages">
-            <a class="input-group-button button message-search">Search</a>
+            <a class="input-group-button button plain-button">Search</a>
         </div>
     </form>
-<div>
     <ul class="dropdown menu" data-dropdown-menu>
         <li class="has-submenu">
             <a href="#0">Author</a>
@@ -28,9 +26,8 @@
             </ul>
         </li>
     </ul>
-    <button type="button" class="add-page button">Add Message</button>
+    <button type="button" class="add-page button plain-button">Add Message</button>
 </div>
-</main>
 
 <script>
     $('.edit').click(function() {
