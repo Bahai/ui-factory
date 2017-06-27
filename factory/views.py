@@ -40,8 +40,8 @@ def Universal_House_of_Justice(request):
 def National_Spiritual_Assembly(request):
     return render(request, 'messages/nsa.html', {})
 
-def feast(request):
+def Feast(request):
     return render(request, 'messages/feast.html', {})
     
-def special(request):
+def Special(request):
     return render(request, 'messages/special.html', {})

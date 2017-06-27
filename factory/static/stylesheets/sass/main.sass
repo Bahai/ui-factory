@@ -58,6 +58,10 @@ article
 .search
 	height: 1.5em
 
+.message-search
+	padding: 0.85em 1em
+	margin: 0px
+
 .plain-list
 	list-style: none
 	margin-left: 0px
@@ -66,8 +70,16 @@ article
 	a
 		text-decoration: none
 
+.no-wrap
+	white-space: nowrap
+
 .off-canvas
 	background-color: $nav-color
+	a
+		outline: none
+		color: $font-color-contrast
+		&:focus 
+			background-color: $font-color-primary
 
 .off-canvas-menu-item
 	background-color: $nav-color
@@ -76,9 +88,10 @@ article
 	a
 		color: $main-color
 		text-decoration: none
-	&:hover
-			background-color: $font-color-primary
-.login
+	&:hover, &:focus 
+		background-color: $font-color-primary
+
+.login-off-canvas
 	text-align: center
 	background-color: $primary-color
 

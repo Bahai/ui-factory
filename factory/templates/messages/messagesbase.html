@@ -1,18 +1,22 @@
+{% extends '../factory/base.html' %} 
+{% load wagtailcore_tags %} {% load wagtailimages_tags %} {% load static %} 
+
 {% block globalbreadcrumbs %}
 <span class="column"><a href="/">Home</a></span> 
 {% endblock globalbreadcrumbs %}
 
-<header>
+{% block local_header %}
+<main>
     <h1>Messages</h1>
     <label for="messagessearch"></label>
     <form action="submit">
         <div class="row align-middle input-group">
-            <span class="search input-group-label fi-magnifying-glass"></span>
-            <input class="search input-group-field col-xs-6" id="messagessearch" placeholder="Search the Message Library" aria-describedby="Search Messages">
-            <a class="input-group-button button">Search</a>
+            <span class="message-search input-group-label fi-magnifying-glass"></span>
+            <input class="message-search input-group-field col-xs-6" id="messagessearch" placeholder="Search the Message Library" aria-describedby="Search Messages">
+            <a class="input-group-button button message-search">Search</a>
         </div>
     </form>
-
+<div>
     <ul class="dropdown menu" data-dropdown-menu>
         <li class="has-submenu">
             <a href="#0">Author</a>
@@ -24,11 +28,9 @@
             </ul>
         </li>
     </ul>
-
-    <hr>
-
     <button type="button" class="add-page button">Add Message</button>
-</header>
+</div>
+</main>
 
 <script>
     $('.edit').click(function() {
@@ -36,3 +38,7 @@
         return editpage(id);
     });
 </script>
+{% endblock local_header %}
+
+{% block extra_content %}
+{% endblock extra_content %}

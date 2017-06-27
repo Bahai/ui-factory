@@ -14,7 +14,7 @@ urlpatterns = [
     url(r'^messages', views.messages, name='messages'),
     url(r'^Universal_House_of_Justice', views.Universal_House_of_Justice, name='Universal_House_of_Justice'),
     url(r'^National_Spiritual_Assembly', views.National_Spiritual_Assembly, name='National_Spiritual_Assembly'),
-    url(r'^feast', views.feast, name='Feast'),
-    url(r'^special', views.special, name='Special'),
+    url(r'^Feast', views.Feast, name='Feast'),
+    url(r'^Special', views.Special, name='Special'),
 
 ]
