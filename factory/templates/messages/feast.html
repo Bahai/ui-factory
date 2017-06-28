@@ -1,8 +1,8 @@
 {% extends 'messages/messagesbase.html' %}
 
 {% block globalbreadcrumbs %}
-<span class="column"><a href="/">Home</a> / <a href="/messages">Messages</a></span> 
-{% endblock globalbreadcrumbs %}
+ / <a href="{% url 'messages' %}">Messages</a> / <a href="{% url 'Feast' %}">Feast</a>
+{% endblock globalbreadcrumbs %} 
 
 {% block extra_content %}
 <main>
