@@ -2,30 +2,27 @@
 {% load wagtailcore_tags %} {% load wagtailimages_tags %} {% load static %} 
 
 {% block globalbreadcrumbs %}
-<span class="column"><a href="/">Home</a></span> 
-{% endblock globalbreadcrumbs %}
+ / <a href="{% url 'messages' %}">Messages</a>
+{% endblock globalbreadcrumbs %} 
 
 {% block local_header %}
 <div class="section_header">
+    <div class="row expanded align-middle">
+        <span class="column"><a href="{% url 'Universal_House_of_Justice' %}">Universal House of Justice</a></span>
+        <span class="column"><a href="{% url 'National_Spiritual_Assembly' %}">National Spiritual Assembly</a></span>
+        <span class="column"><a href="{% url 'Feast' %}">Feast</a></span>
+        <span class="column"><a href="{% url 'Special' %}">Special</a></span>
+        <span class="column">
     <label for="messagessearch"></label>
     <form action="submit">
-        <div class="row align-middle input-group">
-            <span class="message-search input-group-label fi-magnifying-glass"></span>
-            <input class="message-search input-group-field col-xs-6" id="messagessearch" placeholder="Search the Message Library" aria-describedby="Search Messages">
+        <div class="input-group">
+            <span class="input-group-label fi-magnifying-glass"></span>
+            <input type="text" class="message-search input-group-field col-xs-6" id="messagessearch" placeholder="Search Messages" aria-describedby="Search Messages">
             <a class="input-group-button button plain-button">Search</a>
         </div>
     </form>
-    <ul class="dropdown menu" data-dropdown-menu>
-        <li class="has-submenu">
-            <a href="#0">Author</a>
-            <ul class="submenu menu vertical" data-submenu>
-                <li><a href="{% url 'Universal_House_of_Justice' %}">Universal House of Justice</a></li>
-                <li><a href="{% url 'National_Spiritual_Assembly' %}">National Spiritual Assembly</a></li>
-                <li><a href="{% url 'Feast' %}">Feast</a></li>
-                <li><a href="{% url 'Special' %}">Special</a></li>
-            </ul>
-        </li>
-    </ul>
+    </span>
+    </div>
     <button type="button" class="add-page button plain-button">Add Message</button>
 </div>
 
