@@ -1,7 +1,5 @@
  {% load static from staticfiles %}
 
-
-
 <!DOCTYPE html>
 <html>
 
@@ -36,10 +34,18 @@
 
     <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas>
         <ul class="plain-list plain-link">
-            <a href="{% url 'login' %}" class="menu-item"><li class="off-canvas-menu-item login-off-canvas hide-for-large">Sign In</li></a>
-            <a href="/" class="menu-item"><li class="off-canvas-menu-item">Home</li></a>
-            <a href="{% url 'TAB' %}" class="menu-item"><li class="off-canvas-menu-item">Community News</li></a>
-            <a href="{% url 'messages' %}" class="menu-item"><li class="off-canvas-menu-item">Messages</li></a>
+            <a href="{% url 'login' %}" class="menu-item">
+                <li class="off-canvas-menu-item login-off-canvas hide-for-large">Sign In</li>
+            </a>
+            <a href="/" class="menu-item">
+                <li class="off-canvas-menu-item">Home</li>
+            </a>
+            <a href="{% url 'news' %}" class="menu-item">
+                <li class="off-canvas-menu-item">News</li>
+            </a>
+            <a href="{% url 'messages' %}" class="menu-item">
+                <li class="off-canvas-menu-item">Messages</li>
+            </a>
         </ul>
     </div>
     <div class="off-canvas-content" data-off-canvas-content>
@@ -48,30 +54,32 @@
                 <span class="column text-right">
                     <div class="row align-middle hide-for-large">
                         <span class="icon fi-list"></span>
-                        <span class="pcontrast">Menu</span>
-                    </div>
-                </span>
-                <div class="column align-center">
-                    <a href="/"><span class="starlogo"></span></a>
-                </div>
-                <div class="column">
-                    <div class="row align-middle text-end hide-for-small-only">
-                        <span class="column icon fi-magnifying-glass"></span>
-                        <input type="text" name="query" placeholder="Search" class="column search" />
-                        <div class="column register show-for-large no-wrap">
-                            <a class="acontrast" href="{% url 'login' %}">Login</a> | <a class="acontrast" href="{% url 'register' %}">Register</a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+                <span class="pcontrast">Menu</span>
+    </div>
+    </span>
+    <div class="column align-center">
+        <a href="/"><span class="starlogo"></span></a>
+    </div>
+    <div class="column">
+        <div class="row align-middle text-end hide-for-small-only">
+            <span class="column icon fi-magnifying-glass"></span>
+            <input type="text" name="query" placeholder="Search" class="column search" />
+            <div class="column register show-for-large no-wrap">
+                <a class="acontrast" href="{% url 'login' %}">Login</a>
+            </div>
+        </div>
+    </div>
+    </nav>
     {# BREADCRUMBS #}
-    <div class="row expanded align-middle">{% block globalbreadcrumbs %} {% endblock globalbreadcrumbs %} </div>
+    <div class="row expanded align-middle">
+        <span class="column"><a href="/">Community Home</a>
+        {% block globalbreadcrumbs %}{% endblock globalbreadcrumbs %}
+        </span>
+    </div>
     </header>
 
 
-    {% block local_header %} {% endblock local_header %} 
-    {% block content %} {% endblock content %}
-    {% block extra_content %} {% endblock extra_content %}
+    {% block local_header %} {% endblock local_header %} {% block content %} {% endblock content %} {% block extra_content %} {% endblock extra_content %}
 
     <footer>
         <div class="row align-middle align-justify footer-row">
@@ -101,12 +109,12 @@
     </script>
     <script>
         $('.menu-item').focus(
-        function(){
-            $(this).child('off-canvas-menu-item').css('background-color','#202020');
-        }).blur(
-        function(){
-            $(this).child('off-canvas-menu-item').css('background-color','#4C413B');
-        });
+            function() {
+                $(this).child('off-canvas-menu-item').css('background-color', '#202020');
+            }).blur(
+            function() {
+                $(this).child('off-canvas-menu-item').css('background-color', '#4C413B');
+            });
     </script>
 </body>
 

@@ -7,14 +7,11 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'factory/home.html', {})
 
-def TAB_index(request):
+def news(request):
     return render(request, 'TAB/blog_index_page.html', {})
 
 def TAB_article(request):
     return render(request, 'TAB/blog_page.html', {})
-
-def TAB_base(request):
-    return render(request, 'TAB/tabindex.html', {})
 
 def login(request):
     return render(request, 'login/index.html', {})

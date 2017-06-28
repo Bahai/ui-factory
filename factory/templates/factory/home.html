@@ -1,9 +1,9 @@
 {% extends 'factory/base.html' %} {% block content %}
 <main>
-    <h5>Home Page</h5>
+    <h5>Community Home</h5>
     <ul>
         <li><a href="{% url 'login' %}">Login</a></li>
-        <li><a href="{% url 'TAB' %}">Community News</a></li>
+        <li><a href="{% url 'news' %}">News</a></li>
         <li><a href="{% url 'messages' %}">Messages</a></li>
     </ul>
 </main>
