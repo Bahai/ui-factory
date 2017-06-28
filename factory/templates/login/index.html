@@ -7,13 +7,13 @@
         <section id="login">
             <form action="submit">
                 <label for="bahai-id">Bahá'í ID</label>
-                <input placeholder='00123456' type="number" name='bahai-id' id='bahai-id' />
+                <input placeholder='00123456' type="text" name='bahai-id' id='bahai-id' />
                 <label for="password">Password</label>
                 <input type="password" id="password" placeholder="Password">
-                <button type="submit" class="button">Login</button>
+                <div class="text-right"><button type="submit" class="button">Login</button></div>
             </form>
-            <button class="button" href="{% url 'register' %}">Register</button>
         </section>
+        <a href="{% url 'register' %}">Register</a>
         <a href="/help">Having Trouble?</a>
     </main>
 </body>

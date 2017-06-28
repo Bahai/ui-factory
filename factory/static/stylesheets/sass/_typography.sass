@@ -8,42 +8,30 @@ $link-color: #1C668C
 $link-color-contrast: #DEEAEF
  
 
-@mixin text-primary($font-size)
+@mixin text-primary()
 	font-family: $font-primary
 	font-color: $font-color-primary
-	font-size: $font-size
 
-@mixin text-secondary($font-size)
+@mixin text-secondary()
 	font-family: $font-secondary
 	font-color: $font-color-secondary
-	font-size: $font-size
 
-h1
-	@include text-secondary (2.8em)
-h2 
-	@include text-secondary (2.5em)
-h3 
-	@include text-secondary (2.2em)
-h4 
-	@include text-secondary (2em)
-h5 
-	@include text-secondary (1.7em)
-h6 
-	@include text-secondary (1.3em)
+h1, h2, h3, h4, h5, h6
+	@include text-secondary
 
 p
-	@include text-primary(1em)
+	@include text-primary
 
 .quote
-	@include text-primary(1.25em)
+	@include text-primary
 	font-style: italic
 
 a
-	@include text-primary(1em)
+	@include text-primary
 	font-color: $link-color
 		
 ul, ol
-	@include text-primary(1em)
+	@include text-primary
 	margin: 0 0 0 2em
 	padding: 0
 	text-align: left
@@ -51,9 +39,7 @@ ul, ol
 .pcontrast
 	font-family: $font-primary
 	color: $font-color-contrast
-	font-size: 1em
 
 .acontrast
 	font-family: $font-primary
 	color: $link-color-contrast
-	font-size: 1em
