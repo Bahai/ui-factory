@@ -1,5 +1,10 @@
-{% extends '../factory/base.html' %} {% block globalbreadcrumbs %}
-<span class="column"><a href="/">Home</a> / <a href="{% url 'login' %}">Login</a></span> {% endblock globalbreadcrumbs %}{% block content %}
+{% extends '../factory/base.html' %}
+
+{% block globalbreadcrumbs %}
+ / <a href="{% url 'login' %}">Login</a>
+{% endblock globalbreadcrumbs %} 
+
+{% block content %}
 
 <body>
     <main>
