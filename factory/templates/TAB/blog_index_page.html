@@ -1,5 +1,5 @@
-{% extends '../factory/base.html' %} {% load wagtailcore_tags %} {% load wagtailimages_tags %} {% load static %} {% block globalbreadcrumbs %} li>
-<a href="{% url 'news' %}"><span class="show-for-sr">Current: </span>News</a></li>
+{% extends '../factory/base.html' %} {% load wagtailcore_tags %} {% load wagtailimages_tags %} {% load static %} {% block globalbreadcrumbs %}
+<li><a href="{% url 'news' %}"><span class="show-for-sr">Current: </span>News</a></li>
 {% endblock globalbreadcrumbs %} {% block content %}
 
 <body>
