@@ -1,4 +1,5 @@
-{% extends 'messages/messagesbase.html' %} {% load static %} {% block globalbreadcrumbs %} / <a href="{% url 'messages' %}">Messages</a> {% endblock globalbreadcrumbs %} {% block extra_content %}
+{% extends 'messages/messagesbase.html' %} {% load static %} {% block globalbreadcrumbs %}
+<li><a href="{% url 'messages' %}"><span class="show-for-sr">Current: </span>Messages</a></li> {% endblock globalbreadcrumbs %} {% block extra_content %}
 
 <main>
     <h3>Messages</h3>

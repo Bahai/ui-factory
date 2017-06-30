@@ -1,4 +1,6 @@
-{% extends '../factory/base.html' %} {% load wagtailcore_tags %} {% load static %} {% block content %}
+{% extends '../factory/base.html' %} {% load wagtailcore_tags %} {% load static %} {% block globalbreadcrumbs %}
+<li><a href="{% url 'news' %}"><span class="show-for-sr">Current: </span>News</a></li>
+{% endblock globalbreadcrumbs %}{% block content %}
 <header class="">
     <div class="text-center">
         <img src="" alt="">
@@ -7,11 +9,11 @@
 </header>
 <main>
     <div class="row">
-            <h4 class="">{{ page.title }}</h4>
-            <em>{{ page.latest_revision_created_at }}</em>
-            <p>
-                {{ page.body|richtext }}
-            </p>
+        <h4 class="">{{ page.title }}</h4>
+        <em>{{ page.latest_revision_created_at }}</em>
+        <p>
+            {{ page.body|richtext }}
+        </p>
     </div>
 </main>
 {% endblock %}

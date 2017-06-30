@@ -71,13 +71,18 @@
     </div>
     </nav>
     {# BREADCRUMBS #}
-    <div class="row expanded align-middle">
+    <!--<div class="row expanded align-middle breadcrumbs">
         <span class="column"><a href="/">Community Home</a>
-        {% block globalbreadcrumbs %}{% endblock globalbreadcrumbs %}
         </span>
         <span class="column text-end">
             {% now 'd F Y' %}
         </span>
+    </div>-->
+    <div aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+            <li><a href="/">Community Home</a></li>
+            {% block globalbreadcrumbs %}{% endblock globalbreadcrumbs %}
+        </ul>
     </div>
     </header>
 

@@ -1,15 +1,11 @@
-{% extends 'messages/messagesbase.html' %}
-
-{% block globalbreadcrumbs %}
- / <a href="{% url 'messages' %}">Messages</a> / <a href="{% url 'Feast' %}">Feast</a>
-{% endblock globalbreadcrumbs %} 
-
-{% block extra_content %}
+{% extends 'messages/messagesbase.html' %} {% block localbreadcrumbs %}
+<li><a href="{% url 'Feast' %}"><span class="show-for-sr">Current: </span>Feast</a></li>
+{% endblock localbreadcrumbs %} {% block extra_content %}
 <main>
     <h1>Feast</h1>
-    
-        <article id="" class="small-12 article-box">
-            
+
+    <article id="" class="small-12 article-box">
+
         <div class="row align-middle">
             <h4 class="column small-9 text-left container"><a href="{% url 'letter' %}">Message for the Feast of Rahmat</a></h4>
             <h6 class="column small-3 text-right">June 22, 2017</h6>
@@ -28,9 +24,9 @@
                     <li><a href="">Persian PDF</a></li>
                 </ul>
             </div>
-            
+
     </article>
-    
+
     <article id="" class="small-12 article-box">
         <div class="row align-middle">
             <h4 class="column small-9 text-left container">Message for the Feast of Sultán</h4>
