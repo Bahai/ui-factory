@@ -12,12 +12,22 @@ gulp.task('sass', function() {
     return gulp.src('static/stylesheets/sass/main.sass')
         .pipe($.sass({
                 includePaths: sassPaths,
-                outputStyle: 'compressed' // if css compressed **file size**
+                outputStyle: 'extended'
             })
             .on('error', $.sass.logError))
         .pipe($.autoprefixer({
             browsers: ['last 2 versions', 'ie >= 9']
         }))
+        .pipe(gulp.dest('static/stylesheets/css'));
+});
+
+gulp.task('foundation', function() {
+    return gulp.src('static/stylesheets/sass/foundation.scss')
+        .pipe($.sass({
+                includePaths: sassPaths,
+                outputStyle: 'extended'
+            })
+            .on('error', $.sass.logError))
         .pipe(gulp.dest('static/stylesheets/css'));
 });
 
