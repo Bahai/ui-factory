@@ -12,7 +12,7 @@ gulp.task('sass', function() {
     return gulp.src('static/stylesheets/sass/main.sass')
         .pipe($.sass({
                 includePaths: sassPaths,
-                outputStyle: 'extended'
+                outputStyle: 'compressed'
             })
             .on('error', $.sass.logError))
         .pipe($.autoprefixer({
