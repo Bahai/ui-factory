@@ -1,19 +1,89 @@
 {% extends '../factory/base.html' %} {% load wagtailcore_tags %} {% load wagtailimages_tags %} {% load static %} {% block globalbreadcrumbs %}
 <li><a href="{% url 'messages' %}">Messages</a></li>{% block localbreadcrumbs %} {% endblock localbreadcrumbs %} {% endblock globalbreadcrumbs %} {% block local_header %}
 
-<div class="top-bar">
+<!--<div class="title-bar" data-responsive-toggle="message-source" data-hide-for="medium">
+    <button class="menu-icon" type="button" data-toggle="message-source"></button>
+</div>-->
+
+<div class="top-bar" id="message-source">
     <div class="top-bar-left">
-        <ul class="dropdown menu" data-dropdown-menu>
+        <ul class="vertical large-horizontal dropdown menu" data-dropdown-menu>
             <li><a href="{% url 'Universal_House_of_Justice' %}">Universal House of Justice</a>
                 <ul class="menu vertical">
-                    <li>2017</li>
-                    <li>2016</li>
-                    <li>2015</li>
+                    <li><a href="">2017</a></li>
+                    <li><a href="">2016</a></li>
+                    <li><a href="">2015</a></li>
+                    <li><a href="">2014</a></li>
+                    <li><a href="">2013</a></li>
+                    <li><a href="">2012</a></li>
+                    <li><a href="">2011</a></li>
+                    <li><a href="">2010</a></li>
+                    <li><a href="">2009</a></li>
+                    <li><a href="">2008</a></li>
+                    <li><a href="">2007</a></li>
+                    <li><a href="">2006</a></li>
+                    <li><a href="">2005</a></li>
+                    <li><a href="">2004</a></li>
+                    <li><a href="">2003</a></li>
+                    <li><a href="">2002</a></li>
+                    <li><a href="">2001</a></li>
+                    <li><a href="">2000</a></li>
+                    <li><a href="">1999</a></li>
+                    <li><a href="">1998</a></li>
+                    <li><a href="">1997</a></li>
+                    <li><a href="">1996</a></li>
+                    <li><a href="">1995</a></li>
+                    <li><a href="">1994</a></li>
+                    <li><a href="">1993</a></li>
+                    <li><a href="">1992</a></li>
+                    <li><a href="">1991</a></li>
+                    <li><a href="">1990</a></li>
+                    <li><a href="">1989</a></li>
+                    <li><a href="">1988</a></li>
+                    <li><a href="">1987</a></li>
+                    <li><a href="">1986</a></li>
+                    <li><a href="">1985</a></li>
                 </ul>
             </li>
-            <li><a href="{% url 'National_Spiritual_Assembly' %}">National Spiritual Assembly</a></li>
-            <li><a href="{% url 'Feast' %}">Feast</a></li>
-            <li><a href="{% url 'Special' %}">Special</a></li>
+            <li><a href="{% url 'National_Spiritual_Assembly' %}">National Spiritual Assembly</a>
+                <ul class="menu vertical">
+                    <li><a href="">2017</a></li>
+                    <li><a href="">2016</a></li>
+                    <li><a href="">2015</a></li>
+                    <li><a href="">2014</a></li>
+                    <li><a href="">2013</a></li>
+                    <li><a href="">2012</a></li>
+                    <li><a href="">2011</a></li>
+                    <li><a href="">2010</a></li>
+                    <li><a href="">2009</a></li>
+                    <li><a href="">2008</a></li>
+                    <li><a href="">2007</a></li>
+                    <li><a href="">2006</a></li>
+                    <li><a href="">2005</a></li>
+                    <li><a href="">2004</a></li>
+                    <li><a href="">2003</a></li>
+                    <li><a href="">2002</a></li>
+                    <li><a href="">2001</a></li>
+                    <li><a href="">2000</a></li>
+                </ul>
+            </li>
+            <li><a href="{% url 'Feast' %}">Feast</a>
+                <ul class="menu vertical">
+                    <li><a href="">2017</a></li>
+                    <li><a href="">2016</a></li>
+                    <li><a href="">2015</a></li>
+                    <li><a href="">2014</a></li>
+                    <li><a href="">2013</a></li>
+                    <li><a href="">2012</a></li>
+                </ul>
+            </li>
+            <li><a href="{% url 'Special' %}">Special</a>
+                <ul class="menu vertical">
+                    <li><a href="">2017</a></li>
+                    <li><a href="">2016</a></li>
+                    <li><a href="">2015</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
     <div class="top-bar-right">
