@@ -1,10 +1,98 @@
-{% extends 'factory/base.html' %} {% block content %}
+{% extends 'factory/base.html' %} {% load static %} {% block content %}
 <main>
-    <h5>Community Home</h5>
-    <ul>
-        <li><a href="{% url 'login' %}">Login</a></li>
-        <li><a href="{% url 'news' %}">News</a></li>
-        <li><a href="{% url 'messages' %}">Messages</a></li>
-    </ul>
+    <div class="row">
+        <div class="column small-12 medium-8">
+            <!--News TAB-->
+            <section>
+                <h4>Featured News</h4>
+                <div class="article-box">
+                    <a href="#articleview">
+                        <article class="row">
+                            <div class="column news-img large-2 small-2">
+                                <img src="https://c1.staticflickr.com/5/4181/34344570611_a270a38313_q.jpg" alt="">
+                            </div>
+                            <div class="column large-10 small-10">
+                                <h4>Regional Bahá’í Councils at 20: their origins, evolution and impact</h4>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <div class="article-box">
+                    <a href="#articleview">
+                        <article class="row expanded">
+                            <div class="column news-img large-2 small-2">
+                                <img src="{% static 'img/spacecat.png' %}" alt="space cat">
+                            </div>
+                            <div class="column large-10 small-10">
+                                <h4>Article Title</h4>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
+            <!--Messages-->
+            <h4>Featured Messages</h4>
+            <div class="row">
+                <article id="" class="column small-12 article-box">
+                    <div class="row expanded align-middle">
+                        <h4 class="column small-9 text-left">America and the Five Year Plan</h4>
+                        <h6 class="column small-3 text-right">25 February 2017</h6>
+                    </div>
+                    <div class="row expanded">
+                        <div class="column small-9">
+                            <p>We are pleased to make available to you two recently released letters from the National Spiritual Assembly.</p>
+                            <p>The first, a cover letter addressed to the American Bahá’í community, is intended to introduce the second, a letter conveying the National Assembly’s thoughts on the current troubling state of affairs in our country and on
+                                our most effective response as Bahá’ís.</p>
+                            <p>Each of the two documents is presented in English, in PDF form. Translations of the second―the Assembly’s letter on “America and the Five Year Plan”―are offered in Persian and Spanish, also in PDF form.</p>
+                        </div>
+                        <div class="column small-3 text-right">
+                            <ul class="plain-list">
+                                <li><a href="">English PDF</a></li>
+                                <li><a href="">Spanish PDF</a></li>
+                                <li><a href="">Persian PDF</a></li>
+                                <li><a href="">French PDF</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <!--Sidebar-->
+        <div class="column small-12 medium-4">
+            <article class="article-box sidebar-box">
+                <h5>Fund</h5>
+                <p class="text-center">2018 Fund Goal: $36M<br>$4,095,020<br>As of June 30, 2017</p>
+                <a class="button plain-button right" target="blank" href="https://ocs.bahai.us/ocs/">Contribute »</a>
+            </article>
+            <article class="article-box sidebar-box">
+                <h5>Holy Days</h5>
+                <div class="">
+                    <a href="https://bahai-messages.s3.amazonaws.com/uhj/2014/1211_UHJ_50-Yr_Table_of_Dates/20141211_UHJ_50-Yr_Table_of_Dates_(English).pdf">
+                        <p>Bahá'í Calendar for Next 50 Years – Holy Days/Feast Days</p>
+                    </a>
+                    <ul class="plain-list">
+                        <li>Birth of the Báb: October 21</li>
+                        <li>Birth of Bahá’u’lláh: October 22</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="article-box sidebar-box">
+                <h5>Service Opportunities</h5>
+            </article>
+            <article class="article-box sidebar-box">
+                <h5>Forms and Mannuals</h5>
+            </article>
+            <article class="article-box sidebar-box">
+                <h5>Directories</h5>
+            </article>
+            <article class="article-box sidebar-box">
+                <h5>Need Help?</h5>
+                <p>For support or inquiries regarding the new site, please contact <a href="mailto:web@bahai.us">web@bahai.us</a></p>
+            </article>
+            <article class="article-box sidebar-box">
+                <h5>GLSA</h5>
+            </article>
+        </div>
+    </div>
 </main>
 {% endblock %}
