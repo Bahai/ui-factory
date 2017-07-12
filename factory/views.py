@@ -10,7 +10,7 @@ def home(request):
 def news(request):
     return render(request, 'TAB/blog_index_page.html', {})
 
-def TAB_article(request):
+def article(request):
     return render(request, 'TAB/blog_page.html', {})
 
 def login(request):
