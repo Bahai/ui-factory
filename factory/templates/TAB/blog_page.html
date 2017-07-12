@@ -1,10 +1,11 @@
 {% extends '../factory/base.html' %} {% load wagtailcore_tags %} {% load static %} {% block globalbreadcrumbs %}
 <li><a href="{% url 'news' %}"><span class="show-for-sr">Current: </span>News</a></li>
 {% endblock globalbreadcrumbs %}{% block content %}
-<main>
-    <div class="row">
-        <h4 class="">National Convention: Reflecting on year past, viewing aright opportunities for year ahead</h4>
+<main class="row">
+    <div class="column small-12">
+        <h2 class="">National Convention: Reflecting on year past, viewing aright opportunities for year ahead</h2>
         <img src="https://c1.staticflickr.com/5/4288/34761092793_9dbe404519_z.jpg" alt="">
+        <br><br>
         <em>{{ page.latest_revision_created_at }}</em>
         <p>On the eve of the month of ‘Aẓamat, the National Spiritual Assembly distilled what delegates to the 109th U.S. Bahá’í National Convention, April 27–30, had experienced as they assembled in Foundation Hall of the Bahá’í House of Worship.</p>
         <p>Delegates’ main duties were to prayerfully elect the nine members of the National Assembly that will guide the affairs of the Bahá’í Faith in this country over the coming year and inform the incoming National Assembly through consultation on the
@@ -14,9 +15,9 @@
         <p>The letter continued: “Acknowledging the enthusiastic response of the friends everywhere to the Plan launched at Riḍván last year, the Supreme Body noted the various ways in which new levels of capacity are being seen in communities across the
             globe. These have given rise to a growing anticipation on its part that the ‘signs could hardly be more promising … for what the coming year might bring.’</p>
         <p>“Their next observation captured the imaginations of delegates to such an extent, it became the overarching theme of the Convention:</p>
-        <p>“‘Viewed aright, this year presents the single greatest worldwide opportunity there has ever been for connecting hearts to Bahá’u’lláh. In the months ahead, let all be mindful of this precious chance and alert to the possibilities that exist in
+        <blockquote>“‘Viewed aright, this year presents the single greatest worldwide opportunity there has ever been for connecting hearts to Bahá’u’lláh. In the months ahead, let all be mindful of this precious chance and alert to the possibilities that exist in
             every space for acquainting others with His life and sublime mission. For the teaching opportunity that is now before the Bahá’í world to be seized to its fullest extent, creative thought needs to be given to the conversations that could unfold
-            with every kind of person. In the course of such meaningful conversations, perception is heightened and hearts are opened ― sometimes immediately.’”</p>
+            with every kind of person. In the course of such meaningful conversations, perception is heightened and hearts are opened ― sometimes immediately.’”</blockquote>
         <p>Our national governing body then detailed questions articulated at Convention that are “well worth our collective consideration as we all contemplate how best to fulfill the wishes of the House of Justice in the coming months”:</p>
         <ul>
             <li>How can we engage in “meaningful conversations” with the greatest possible number of our fellow citizens, representing the rich diversity of our nation?</li>
@@ -26,6 +27,7 @@
                 formally enrolled?</li>
             <li>How can we ensure that the bicentenary observances are more than just standalone events? What are our plans for following up with those who attend? How will our relationships with them be further developed?</li>
         </ul>
+        <br>
         <p>“Fundamental,” the National Assembly wrote, “was the friends’ understanding that the bicentenaries call for universal participation in the celebration of these sacred anniversaries ― expressed in a variety of settings, including homes, neighborhoods,
             Bahá’í Centers, and other venues, and expressive of the wide range of creativity possessed by the diverse populace of America. …”</p>
         <p>As the Feast letter noted, efforts surrounding the upcoming bicentenary of the Birth of Bahá’u’lláh were very much on the minds of delegates. Also woven throughout the proceedings was a recognition that issues of race are integral to virtually

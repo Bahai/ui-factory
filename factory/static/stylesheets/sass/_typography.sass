@@ -10,11 +10,11 @@ $link-color-contrast: #DEEAEF
 
 @mixin text-primary()
 	font-family: $font-primary
-	font-color: $font-color-primary
+	color: $font-color-primary
 
 @mixin text-secondary()
 	font-family: $font-secondary
-	font-color: $font-color-secondary
+	color: $font-color-secondary
 
 h1, h2, h3, h4, h5, h6
 	@include text-secondary
@@ -22,9 +22,8 @@ h1, h2, h3, h4, h5, h6
 p
 	@include text-primary
 
-.quote
+blockquote
 	@include text-primary
-	font-style: italic
 
 a
 	@include text-primary
