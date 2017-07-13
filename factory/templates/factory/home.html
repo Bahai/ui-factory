@@ -4,7 +4,7 @@
         <div class="column small-12 medium-8">
             <!--News TAB-->
             <section>
-                <h4>Featured News</h4>
+                <h4>News</h4>
                 <div class="box">
                     <a href="#articleview">
                         <article class="row">
@@ -32,8 +32,8 @@
             </section>
             <hr>
             <!--Messages-->
-            <h4>Featured Messages</h4>
-            <div class="row">
+            <h4>Messages</h4>
+            <div class="row box">
                 <article id="" class="column small-12">
                     <div class="row expanded align-middle">
                         <h4 class="column small-9 text-left">America and the Five Year Plan</h4>
@@ -57,58 +57,104 @@
                     </div>
                 </article>
             </div>
-            <hr>
-            <!--Resources-->
-            <h4>Resources</h4>
-            <a href="#service-opportunities">
-                <article class="sidebar-box">
-                    <h5>Service Opportunities</h5>
-                </article>
-            </a>
-            <article class="sidebar-box">
-                <h5>Popular Forms:</h5>
-                <ul class="plain-list">
-                    <li>Holy Day letter for students</li>
-                    <li>LSA Insurance form</li>
-                    <li></li>
-                </ul>
-            </article>
-            <article class="sidebar-box">
-                <h5>Directories</h5>
-                <ul class="plain-list">
-                    <li><a href="">Assemblies and Groups</a></li>
-                    <li><a href="">Auxiliary Board</a></li>
-                    <li><a href="">Continental Board of Counselors</a></li>
-                    <li><a href="">Regional Councils</a></li>
-                    <li><a href="">National Offices</a></li>
-                    <li><a href="https://www.bahai.us/community/huququllah/">The Board of Trustees of Ḥuqúqu'lláh in the United States</a></li>
-                    <li><a href="">Bahá’í Center Assistance</a></li>
-                </ul>
-            </article>
-            <a href="https://www.bahai.us/glsa/">
-                <article class="sidebar-box">
-                    <h5>GLSA</h5>
-                    <p>Access the beta version of the online Guidelines for Local Spiritual Assemblies.</p>
-                </article>
-            </a>
-        </div>
-        <!--Sidebar-->
-        <div class="column small-12 medium-4">
-            <article class="sidebar-box row">
-                <div class="column row row">
-                    <h5>2018 Fund Goal: $36M</h5>
-                    <div class="circle-graph fund" data-circle-graph data-percent="4,095,020">
-                        <div class="circle-graph-progress">
-                            <div class="circle-graph-progress-fill"></div>
+            <div class="row box">
+                <article id="" class="column small-12">
+                    <div class="row expanded align-middle">
+                        <h4 class="column small-9 text-left"><a href="{% url 'letter' %}">Message for the Feast of Rahmat</a></h4>
+                        <h6 class="column small-3 text-right">22 June 2017</h6>
+                    </div>
+                    <div class="row expanded">
+                        <div class="column small-9">
+                            <p>We are pleased to make available online—in both PDF and MS Word formats—the National Spiritual Assembly's message for the Feast of Masá’il.</p>
+                            <p>In addition, we are delighted to be able to provide Persian and Spanish translations, both of which are offered in PDF form­—with the Spanish translation also offered in MS Word format.</p>
                         </div>
-                        <div class="circle-graph-percents">
-                            <div class="circle-graph-percents-wrapper">
-                                <span class="circle-graph-percents-number"></span>
-                                <span class="circle-graph-percents-units">of 36M</span>
+                        <div class="column small-3 text-right">
+                            <ul class="plain-list">
+                                <li><a href="">English PDF</a></li>
+                                <li><a href="">English DOC</a></li>
+                                <li><a href="">Spanish PDF</a></li>
+                                <li><a href="">Spanish DOC</a></li>
+                                <li><a href="">Persian PDF</a></li>
+                            </ul>
+                        </div>
+                </article>
+                </div>
+                <hr>
+                <!--Resources-->
+                <h4>Resources</h4>
+                <a href="https://www.bahai.us/community/service-opportunities/">
+                    <article class="home-box">
+                        <h5>Service Opportunities</h5>
+                    </article>
+                </a>
+                <article class="home-box">
+                    <h5>Fund</h5>
+                    <ul class="plain-list">
+                        <li><a href="https://ocs.bahai.us/">Online Contribution System</a></li>
+                        <li><a href="https://bahai.us/fund">Fund Resources</a></li>
+                        <li></li>
+                    </ul>
+                </article>
+                <article class="home-box">
+                    <h5>Popular Forms</h5>
+                    <ul class="plain-list">
+                        <li>Holy Day letter for students</li>
+                        <li>LSA Insurance form</li>
+                        <li></li>
+                    </ul>
+                    <p><a href="https://www.bahai.us/community/forms/">Other Forms and Manuals</a></p>
+                </article>
+                <article class="home-box">
+                    <h5>Directories</h5>
+                    <ul class="plain-list">
+                        <li><a href="">Assemblies and Groups</a></li>
+                        <li><a href="">Auxiliary Board</a></li>
+                        <li><a href="">Continental Board of Counselors</a></li>
+                        <li><a href="">Regional Councils</a></li>
+                        <li><a href="">National Offices</a></li>
+                        <li><a href="https://www.bahai.us/community/huququllah/">The Board of Trustees of Ḥuqúqu'lláh in the United States</a></li>
+                        <li><a href="">Bahá’í Center Assistance</a></li>
+                    </ul>
+                </article>
+                <a href="#profile">
+                    <article class="home-box">
+                        <h5>My Profile</h5>
+                    </article>
+                </a>
+                <a href="https://www.bahai.us/community/unit-convention/">
+                    <article class="home-box">
+                        <h5>Unit Convention</h5>
+                    </article>
+                </a>
+                <a href="http://elections.bahai.us/">
+                    <article class="home-box">
+                        <h5>Ridvan Election Materials</h5>
+                    </article>
+                </a>
+                <a href="https://www.bahai.us/glsa/">
+                    <article class="home-box">
+                        <h5>GLSA</h5>
+                        <p>Access the beta version of the online Guidelines for Local Spiritual Assemblies.</p>
+                    </article>
+                </a>
+            </div>
+            <!--Sidebar-->
+            <div class="column small-12 medium-4">
+                <article class="home-box row">
+                    <div class="column row row">
+                        <h5>2018 Fund Goal: $36M</h5>
+                        <div class="circle-graph fund" data-circle-graph data-percent="4,095,020">
+                            <div class="circle-graph-progress">
+                                <div class="circle-graph-progress-fill"></div>
+                            </div>
+                            <div class="circle-graph-percents">
+                                <div class="circle-graph-percents-wrapper">
+                                    <span class="circle-graph-percents-number"></span>
+                                    <span class="circle-graph-percents-units">of 36M</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!--<ul class="bar-graph">
+                        <!--<ul class="bar-graph">
                     <li class="bar-graph-axis">
                         <div class="bar-graph-label">36M</div>
                         <div class="bar-graph-label">22.75M</div>
@@ -117,27 +163,52 @@
                     </li>
                     <li class="bar primary" style="height: 11.3%;" title=""></li>
                 </ul>-->
-                    <p class="text-center">$4,095,020<br>As of June 30, 2017</p>
-                    <div class="text-right"><a class="button plain-button" target="blank" href="https://ocs.bahai.us/ocs/">Contribute »</a></div>
-                </div>
-            </article>
-            <article class="sidebar-box">
-                <h5>
-                    <a href="https://bahai-messages.s3.amazonaws.com/uhj/2014/1211_UHJ_50-Yr_Table_of_Dates/20141211_UHJ_50-Yr_Table_of_Dates_(English).pdf">
-                        <p>Bahá'í Calendar for Next 50 Years – Holy Days/Feast Days</p>
-                    </a>
-                </h5>
-                <hr>
-                <ul class="plain-list">
-                    <li>Birth of the Báb: October 21</li>
-                    <li>Birth of Bahá’u’lláh: October 22</li>
-                </ul>
-            </article>
-            <article class="sidebar-box">
-                <h5>Need Help?</h5>
-                <p>For support or inquiries regarding the new site, please contact <a href="mailto:web@bahai.us">web@bahai.us</a></p>
-            </article>
+                        <p class="text-center">$4,095,020<br>As of June 30, 2017</p>
+                        <div class="text-right"><a class="button plain-button" target="blank" href="https://ocs.bahai.us/ocs/">Contribute »</a></div>
+                    </div>
+                </article>
+                <article class="home-box">
+                    <h5>
+                        <a href="https://bahai-messages.s3.amazonaws.com/uhj/2014/1211_UHJ_50-Yr_Table_of_Dates/20141211_UHJ_50-Yr_Table_of_Dates_(English).pdf">
+                            <p>Bahá'í Calendar for Next 50 Years – Holy Days/Feast Days</p>
+                        </a>
+                    </h5>
+                    <hr>
+                    <ul class="plain-list">
+                        <li>Birth of the Báb: October 21</li>
+                        <li>Birth of Bahá’u’lláh: October 22</li>
+                    </ul>
+                </article>
+                <article class="home-box">
+                    <h5>Supreme Body Comments on the Path to Global Economic Well-Being</h5>
+                    </p>
+                    <a href="https://s3.amazonaws.com/bahai-messages/uhj/2017/20170301_uhj_global-economic-well-being_english.pdf">Download letter dated March 1, 2017</a>
+                    <p style="font-size: 10px;"><strong>Audio recording provided courtesy of Mr. Richard Reid</strong></p>
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/327172604%3Fsecret_token%3Ds-sgFcd&amp;color=2284a1&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
+                </article>
+                <article class="home-box">
+                    <h5>America and the Five Year Plan</h5>
+                    <a href="https://s3.amazonaws.com/bahai-messages/nsa/2017/20170225_nsa_america-five-year-plan.pdf">Download letter dated February 25, 2017</a>
+                    <p style="font-size: 10px;"><strong>Audio recording provided courtesy of Mr. Richard Reid</strong></p>
+                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/310577295%3Fsecret_token%3Ds-b2OP7&amp;color=2284a1&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
+                </article>
+                <article class="home-box">
+                    <h5>Mr. Paul Lample, Member of the House of Justice, <br/>Elaborates on the <br/>New Five Year Plan</h5>
+                    <p>May 20, 2016</p>
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/267329365%3Fsecret_token%3Ds-FMqjF&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                    <br>
+                    <h5>Transcript of Talk Given by Mr. Paul Lample at Bahá’í House of Worship</h5>
+                    <p>The National Spiritual Assembly is delighted to make available to the friends, many of whom have requested it, a full transcript of the talk given by Mr. Paul Lample, current member of the Universal House of Justice, at the Bahá’í
+                        House of Worship in Wilmette, on May 20 of this year.</p>
+                    <p>The transcript, which is a little over 18 pages in length, can be accessed through the link immediately below. It can either be read online or downloaded to your own computer for long-term study and reflection.</p>
+                    <p><a href="https://s3.amazonaws.com/bahai-web/tab/transcripts/May-20-transcript-Mr.-Paul-Lample-at-bhow_english.pdf">Transcript of May 20 Talk by Mr. Paul Lample at the Bahá’í House of Worship</a></p>
+                    <p>The talk also continues to be available in audio form through access provided elsewhere on this same first page of the national member services website.</p>
+                </article>
+                <article class="home-box">
+                    <h5>Need Help?</h5>
+                    <p>For support or inquiries regarding the new site, please contact <a href="mailto:web@bahai.us">web@bahai.us</a></p>
+                </article>
+            </div>
         </div>
-    </div>
 </main>
 {% endblock %}
