@@ -117,7 +117,7 @@
         $("[data-circle-graph]").each(function() {
             var $graph = $(this),
                 percent = parseInt($graph.data('percent'), 10),
-                deg = 360 * percent / 100;
+                deg = 360 * percent / 36;
             if (percent > 50) {
                 $graph.addClass('gt-50');
             }
