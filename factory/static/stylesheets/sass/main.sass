@@ -55,7 +55,7 @@ input
 	height: 1.5em
 
 .breadcrumbs
-	padding: 5px 5px
+	padding: 10px 10px
 	background-color: $main-color
 
 .fund
@@ -81,6 +81,8 @@ input
 .plain-list
 	list-style: none
 	margin-left: 0px
+	a
+		font-family: $font-secondary
 
 .plain-link
 	a
@@ -133,16 +135,19 @@ input
 .message-search
 	min-width: 200px
 
-@media only screen and (min-width: 48em) //phones
+@media only screen and (min-width: 48em) //phones (small)
 	.starlogo
 		@include logo(50px, "../../img/BahaiFaithwithStar.png", center, 200px 40px)
 	.footeraddress
 		text-align: center
 
-@media only screen and (min-width: 62em) //tablets
+@media only screen and (min-width: 62em) //tablets (medium)
 	.starlogo
 		@include logo(50px, "../../img/BahaiFaithwithStar.png", center, 200px 40px)
+	.plain-column
+		padding: 0px
 
-@media only screen and (min-width: 75em) //laptops and desktops
+@media only screen and (min-width: 75em) //laptops and desktops (large)
 	.starlogo
 		@include logo(50px, "../../img/BahaiFaithwithStar.png", center, 200px 40px)
+	
