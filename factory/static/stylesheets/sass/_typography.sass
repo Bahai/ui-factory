@@ -1,8 +1,8 @@
 
-$font-primary: 'Proxima Nova', 'Helvetica Neue', Arial, sans-serif
-$font-secondary: 'Crimson Text', Georgia, 'Times New Roman', serif
-$font-color-primary: #202020
-$font-color-secondary: #5E5E5E
+$font-primary: 'Crimson Text', Georgia, 'Times New Roman', serif
+$font-secondary: 'Proxima Nova', 'Helvetica Neue', Arial, sans-serif
+$font-color-primary: #25635B
+$font-color-secondary: #2E251C
 $font-color-contrast: #FCFCFC
 $link-color: #05353D
 $link-color-contrast: #DEEAEF
@@ -14,13 +14,13 @@ $link-color-contrast: #DEEAEF
 
 @mixin text-secondary()
 	font-family: $font-secondary
-	color: $font-color-primary
+	color: $font-color-secondary
 
 h1, h2, h3, h4, h5, h6
-	@include text-primary
+	@include text-secondary
 
 p, blockquote
-	@include text-secondary
+	@include text-primary
 
 a
 	@include text-primary
@@ -34,8 +34,8 @@ ul, ol
 
 .pcontrast
 	font-family: $font-primary
-	color: $font-color-contrast
+	color: lighten($font-color-primary, 80%)
 
 .acontrast
 	font-family: $font-primary
-	color: $link-color-contrast
+	color: lighten($link-color, 80%)

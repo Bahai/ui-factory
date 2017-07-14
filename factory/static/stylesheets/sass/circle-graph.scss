@@ -11,8 +11,8 @@
 $circle-graph-size: 10rem;
 $circle-graph-percent-number-size: 1.5rem;
 $circle-graph-percent-unit-size: 1rem;
-$circle-graph-background-color: $light-gray;
-$circle-graph-empty-color: $medium-gray;
+$circle-graph-background-color: $secondary-color;
+$circle-graph-empty-color: $main-color;
 $circle-graph-fill-color: $primary-color;
 .circle-graph {
     width: $circle-graph-size;
