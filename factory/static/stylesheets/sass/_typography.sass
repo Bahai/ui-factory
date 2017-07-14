@@ -19,10 +19,11 @@ $link-color-contrast: #DEEAEF
 h1, h2, h3, h4, h5, h6
 	@include text-secondary
 	a
-		color: $font-color-secondary
+		@include text-secondary
 
 p, blockquote
 	@include text-primary
+	font-size: 18px
 
 a
 	@include text-primary
