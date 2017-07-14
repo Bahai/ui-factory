@@ -4,7 +4,7 @@ $font-secondary: 'Crimson Text', Georgia, 'Times New Roman', serif
 $font-color-primary: #202020
 $font-color-secondary: #5E5E5E
 $font-color-contrast: #FCFCFC
-$link-color: #1C668C
+$link-color: #05353D
 $link-color-contrast: #DEEAEF
  
 
@@ -14,10 +14,13 @@ $link-color-contrast: #DEEAEF
 
 @mixin text-secondary()
 	font-family: $font-secondary
-	color: $font-color-secondary
+	color: $font-color-primary
 
-h1, h2, h3, h4, h5, h6, p, blockquote
+h1, h2, h3, h4, h5, h6
 	@include text-primary
+
+p, blockquote
+	@include text-secondary
 
 a
 	@include text-primary
