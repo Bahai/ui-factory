@@ -49,12 +49,11 @@
         </ul>
     </div>
     <div class="off-canvas-content" data-off-canvas-content>
-        <header>
-            <nav class="row menu expanded align-middle" data-toggle="offCanvas">
-                <span class="column text-right">
+        <nav class="row menu expanded align-middle" data-toggle="offCanvas">
+            <span class="column text-right">
                     <div class="row align-middle hide-for-large">
                         <span class="icon fi-list"></span>
-                <span class="pcontrast">Menu</span>
+            <span class="pcontrast">Menu</span>
     </div>
     </span>
     <div class="column align-center">
@@ -71,17 +70,18 @@
     </div>
     </nav>
     {# BREADCRUMBS #}
-    <div class="row expanded">
-        <div class "column" aria-label="You are here:" role="navigation">
-            <ul class="breadcrumbs">
-                <li><a href="/">Community Home</a></li>
-                {% block globalbreadcrumbs %}{% endblock globalbreadcrumbs %}
-            </ul>
-        </div>
-        <span class="column text-end">
+    <header>
+        <div class="row expanded">
+            <div class "column" aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                    <li><a href="/">Community Home</a></li>
+                    {% block globalbreadcrumbs %}{% endblock globalbreadcrumbs %}
+                </ul>
+            </div>
+            <span class="column text-end">
             {% now 'd F Y' %}
         </span>
-    </div>
+        </div>
     </header>
 
 
