@@ -127,10 +127,7 @@ input
 .news-img
 	padding-left: 5px
 	padding-right: 0px
-	padding-bottom: 5px
-
-.tablet-12
-	padding-bottom: 10px
+	padding-bottom: 5px	
 
 .footer-row
 	margin-right: 20px
@@ -146,6 +143,9 @@ input
 .message-search
 	min-width: 200px
 
+.top-bar, .top-bar-left, .top-bar-right
+	background-color: $main-color
+
 @media only screen and (min-width: 48em) //phones (small)
 	.starlogo
 		@include logo(50px, "../../img/BahaiFaithwithStar.png", center, 200px 40px)
@@ -156,7 +156,8 @@ input
   	.tablet-12
         -ms-flex: 0 0 100%
         flex: 0 0 100%
-        max-width: 100%
+        // max-width: 100%
+		padding-bottom: 10px
 
 @media only screen and (min-width: 62em) //tablets (medium)
 	.starlogo
@@ -164,11 +165,12 @@ input
 	.plain-column
 		padding: 0px   
 
-@media only screen and (max-width: 54em) and (orientation: portrait)
+@media only screen and (max-width: 50em) and (orientation: portrait)
   	.tablet-12
         -ms-flex: 0 0 100%
         flex: 0 0 100%
-        max-width: 100%
+        // max-width: 100%
+		padding-bottom: 10px
 
 @media only screen and (min-width: 75em) //laptops and desktops (large)
 	.starlogo
