@@ -143,8 +143,12 @@ input
 .message-search
 	min-width: 200px
 
-.top-bar, .top-bar-left, .top-bar-right
-	background-color: $main-color
+.top-bar, .top-bar ul, .title-bar
+	background-color: $secondary-color
+
+.title-bar
+	color: $font-color-primary
+	justify-content: start
 
 @media only screen and (min-width: 48em) //phones (small)
 	.starlogo
@@ -174,3 +178,13 @@ input
 	.starlogo
 		@include logo(50px, "../../img/BahaiFaithwithStar.png", center, 200px 40px)
 	
+
+.no-js .top-bar
+  display: none
+
+@media screen and (min-width: 40em)
+  .no-js .top-bar
+    display: block
+
+  .no-js .title-bar
+    display: none

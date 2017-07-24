@@ -1,9 +1,15 @@
 {% extends '../factory/base.html' %} {% load wagtailcore_tags %} {% load wagtailimages_tags %} {% load static %} {% block globalbreadcrumbs %}
 <li><a href="{% url 'messages' %}">Messages</a></li>{% block localbreadcrumbs %} {% endblock localbreadcrumbs %} {% endblock globalbreadcrumbs %} {% block local_header %}
 
-<div class="" id="message-source">
-    <div class="">
-        <ul class="dropdown menu align-left" data-dropdown-menu>
+<div class="title-bar no-js" data-responsive-toggle="message-source" data-hide-for="medium">
+    <button class="menu-icon dark" type="button" data-toggle="message-source"></button>
+    <div class="title-bar-title">Messages</div>
+</div>
+
+
+<div class="top-bar no-js" id="message-source">
+    <div class="top-bar-left">
+        <ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
             <li class=""><a href="{% url 'Universal_House_of_Justice' %}">Universal House of Justice</a>
                 <ul class="menu vertical">
                     <li><a href="">2017</a></li>
@@ -80,6 +86,10 @@
                     <li><a href="">2015</a></li>
                 </ul>
             </li>
+        </ul>
+    </div>
+    <div class="top-bar-right">
+        <ul class="menu">
             <li><input type="search" placeholder="Search"></li>
             <li><button type="button" class="button">Search</button></li>
         </ul>
