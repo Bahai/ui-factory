@@ -1,4 +1,5 @@
-{% extends 'messages/messagesbase.html' %} {% block globalbreadcrumbs %} / <a href="{% url 'messages' %}">Messages</a> / <a href="{% url 'Special' %}">Special</a> {% endblock globalbreadcrumbs %} {% block extra_content %}
+{% extends 'messages/messagesbase.html' %} {% block localbreadcrumbs %}
+<li><a href="{% url 'Special' %}"><span class="show-for-sr">Current: </span>Special</a></li>{% endblock localbreadcrumbs %} {% block extra_content %}
 <main>
     <h1>Special</h1>
     <article id="" class="small-12 article-box">
