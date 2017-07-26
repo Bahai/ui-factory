@@ -140,18 +140,21 @@ input
 
 /* Messages */
 
-.message-search
-	min-width: 200px
-
-.top-bar, .top-bar ul, .title-bar
+.title-bar, .top-bar
 	background-color: $secondary-color
-
-.title-bar
 	color: $font-color-primary
 	justify-content: start
+	ul
+		background-color: $secondary-color
 
-.top-bar-right
-	box-sizing: auto
+.messages-search
+	padding: 10px 10px 0px 0px
+	background-color: $main-color
+	input
+		max-width: 200px
+
+.is-drilldown
+	min-height: 0px !important
 
 @media only screen and (min-width: 48em) //phones (small)
 	.starlogo
@@ -169,7 +172,7 @@ input
 	.starlogo
 		@include logo(50px, "../../img/BahaiFaithwithStar.png", center, 200px 40px)
 	.plain-column
-		padding: 0px   
+		padding: 0px
 
 @media only screen and (max-width: 50em) and (orientation: portrait)
   	.tablet-12
