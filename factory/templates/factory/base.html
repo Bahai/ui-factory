@@ -19,7 +19,11 @@
     <script src="{% static 'wagtailadmin/js/vendor/jquery-ui-1.10.3.js' %}"></script>
     <script src="{% static 'wagtailadmin/js/vendor/jquery.autosize.js' %}"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="{% static 'js/vendor/foundation.js' %}"></script>
+    <script src="{% static 'js/vendor/foundation.min.js' %}"></script>
+    <script src="{% static 'js/vendor/what-input.min.js' %}"></script>
+    <script>
+        $(document).foundation();
+    </script>
     <script type="text/javascript" src="//use.typekit.net/ttb5aic.js"></script>
     <!--<script type="text/javascript">
         try {
@@ -106,8 +110,8 @@
                     </address>
                         </div>
                     </div>
-                    <div class="row align-center acontrast footer-row hide-for-large"><a href="{% url 'contact' %}">Contact Us</a></div>
-                    <div class="row align-center copyright">
+                    <div class="row align-center footer-row hide-for-large"><a href="{% url 'contact' %}" class="acontrast">Contact Us</a></div>
+                    <div class="row text-center copyright">
                         <p class="pcontrast">&copy; 2017 National Spiritual Assembly of the Bahá'ís of the United States</p>
                     </div>
                 </footer>
@@ -115,9 +119,7 @@
             </div>
         </div>
     </div>
-    <script>
-        $(document).foundation();
-    </script>
+
     <script>
         $("[data-circle-graph]").each(function() {
             var $graph = $(this),
