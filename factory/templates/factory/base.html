@@ -21,25 +21,41 @@
     <div class="off-canvas-wrapper">
         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
             <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas data-position="left">
+                {# LEFT MENU #}
                 <ul class="plain-list plain-link">
-                    <a href="{% url 'login' %}" class="">
-                        <li class="off-canvas-menu-item login-off-canvas hide-for-large">Sign In</li>
+                    <a href="{% url 'login' %}">
+                        <li class="off-canvas-menu-item login-off-canvas hide-for-large">Login with Bahá'í ID</li>
                     </a>
-                    <a href="/" class="">
+                    <a href="/">
                         <li class="off-canvas-menu-item">Home</li>
                     </a>
-                    <a href="{% url 'news' %}" class="">
+                    <a href="{% url 'news' %}">
                         <li class="off-canvas-menu-item">News</li>
                     </a>
-                    <a href="{% url 'messages' %}" class="">
+                    <a href="{% url 'messages' %}">
                         <li class="off-canvas-menu-item">Messages</li>
+                    </a>
+                    <a href="">
+                        <li class="off-canvas-menu-item">Profile</li>
+                    </a>
+                    <a href="https://www.bahai.us/fund/">
+                        <li class="off-canvas-menu-item">Fund Resources</li>
+                    </a>
+                    <a href="https://www.bahai.us/community/forms/">
+                        <li class="off-canvas-menu-item">Forms and Manuals</li>
+                    </a>
+                    <a href="https://www.bahai.us/community/service-opportunities/">
+                        <li class="off-canvas-menu-item">Service Opportunities</li>
+                    </a>
+                    <a href="https://www.bahai.us/glsa/">
+                        <li class="off-canvas-menu-item">GLSA</li>
                     </a>
                 </ul>
             </div>
+            {# TOP MENU #}
             <div class="off-canvas-content" data-off-canvas-content>
                 <nav class="row menu expanded align-middle">
                     <div class="column text-right">
-                        <!--<button type="button" class="button" data-toggle="offCanvas">Open Menu</button>-->
                         <div class="row align-middle hide-for-large" data-toggle="offCanvas">
                             <span class="icon fi-list"></span>
                             <span class="pcontrast">Menu</span>
