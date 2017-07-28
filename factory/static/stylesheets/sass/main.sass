@@ -6,11 +6,11 @@
 @import "circle-graph.scss"
 
 
-@mixin logo($height, $imgurl, $position, $bgsize)
+@mixin logo($height, $imgurl, $bgposition, $bgsize)
 	height: $height
 	background-image: url($imgurl)
 	background-repeat: no-repeat
-	background-position: $position
+	background-position: $bgposition
 	background-size: $bgsize
 	position: relative
 	display: flex
@@ -42,6 +42,9 @@ input
 
 .starlogo
 	@include logo(50px, "../../img/9pointedstar.png", center, 50px 50px)
+
+.menu
+	height: 50px
 
 .icon
 	padding: 5px
@@ -152,12 +155,12 @@ input
 
 .messages-search
 	padding: 10px 10px 0px 0px
-	background-color: $main-color
 	input
 		max-width: 200px
 
-.is-drilldown
-	min-height: 0px !important
+.messages-header
+	background-color: $main-color
+
 
 @media only screen and (min-width: 48em) //phones (small)
 	.starlogo

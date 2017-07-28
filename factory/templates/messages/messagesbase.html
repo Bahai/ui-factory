@@ -1,12 +1,21 @@
 {% extends '../factory/base.html' %} {% load wagtailcore_tags %} {% load wagtailimages_tags %} {% load static %} {% block globalbreadcrumbs %}
 <li><a href="{% url 'messages' %}">Messages</a></li>{% block localbreadcrumbs %} {% endblock localbreadcrumbs %} {% endblock globalbreadcrumbs %} {% block local_header %}
 
+
+<div class="row expanded messages-header">
+    <span class="column"><h3>Messages</h3></span>
+    <span class="column">
+        <div class="row expanded messages-search align-middle align-right">
+            <input class="" type="search" placeholder="Search">
+            <button type="button" class="button">Search</button>
+        </div>
+    </span>
+</div>
+
 <div class="title-bar no-js" data-responsive-toggle="message-source" data-hide-for="medium">
     <button class="menu-icon dark" type="button" data-toggle="message-source"></button>
     <div class="title-bar-title">Messages</div>
 </div>
-
-
 
 <div class="no-js top-bar align-middle" id="message-source">
     <ul class="menu dropdown vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
@@ -88,10 +97,7 @@
         </li>
     </ul>
 </div>
-<div class="row expanded messages-search align-middle align-right">
-    <input class="" type="search" placeholder="Search">
-    <button type="button" class="button">Search</button>
-</div>
+
 
 <!--<button type="button" class="add-page button plain-button">Add Message</button>-->
 <script>

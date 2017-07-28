@@ -24,13 +24,10 @@
                 {# LEFT MENU #}
                 <ul class="plain-list plain-link">
                     <a href="{% url 'login' %}">
-                        <li class="off-canvas-menu-item login-off-canvas hide-for-large">Login with Bahá'í ID</li>
+                        <li class="off-canvas-menu-item login-off-canvas hide-for-large">Login</li>
                     </a>
                     <a href="/">
                         <li class="off-canvas-menu-item">Home</li>
-                    </a>
-                    <a href="">
-                        <li class="off-canvas-menu-item">Profile</li>
                     </a>
                     <a href="{% url 'news' %}">
                         <li class="off-canvas-menu-item">News</li>
@@ -53,28 +50,24 @@
                 </ul>
             </div>
             {# TOP MENU #}
+            <nav class="row menu expanded align-middle">
+                <div class="column small-3 text-right">
+                    <div class="row align-middle hide-for-large" data-toggle="offCanvas">
+                        <span class="icon fi-list"></span>
+                        <span class="pcontrast">Menu</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <a href="/"><span class="starlogo"></span></a>
+                </div>
+                <div class="column small-3 text-right">
+                    <!-- <span class="column large-2 show-for-large icon fi-magnifying-glass"></span>
+                            <input type="text" name="query" placeholder="Search" class="column large-6 show-for-large search" /> -->
+                    <a class="acontrast sans-serif" href="{% url 'login' %}">Login</a>
+                </div>
+            </nav>
+            {# BREADCRUMBS #}
             <div class="off-canvas-content" data-off-canvas-content>
-                <nav class="row menu expanded align-middle">
-                    <div class="column text-right">
-                        <div class="row align-middle hide-for-large" data-toggle="offCanvas">
-                            <span class="icon fi-list"></span>
-                            <span class="pcontrast">Menu</span>
-                        </div>
-                    </div>
-                    <div class="column align-center">
-                        <a href="/"><span class="starlogo"></span></a>
-                    </div>
-                    <div class="column">
-                        <div class="row align-middle text-end">
-                            <span class="column large-2 show-for-large icon fi-magnifying-glass"></span>
-                            <input type="text" name="query" placeholder="Search" class="column large-6 show-for-large search" />
-                            <div class="column large-3">
-                                <a class="acontrast sans-serif" href="{% url 'login' %}">Login</a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                {# BREADCRUMBS #}
                 <header>
                     <div class="row expanded align-middle">
                         <div class "column" aria-label="You are here:" role="navigation">
