@@ -29,14 +29,14 @@
                     <a href="/">
                         <li class="off-canvas-menu-item">Home</li>
                     </a>
+                    <a href="">
+                        <li class="off-canvas-menu-item">Profile</li>
+                    </a>
                     <a href="{% url 'news' %}">
                         <li class="off-canvas-menu-item">News</li>
                     </a>
                     <a href="{% url 'messages' %}">
                         <li class="off-canvas-menu-item">Messages</li>
-                    </a>
-                    <a href="">
-                        <li class="off-canvas-menu-item">Profile</li>
                     </a>
                     <a href="https://www.bahai.us/fund/">
                         <li class="off-canvas-menu-item">Fund Resources</li>
@@ -65,11 +65,11 @@
                         <a href="/"><span class="starlogo"></span></a>
                     </div>
                     <div class="column">
-                        <div class="row align-middle text-end hide-for-small-only">
-                            <span class="column large-2 icon fi-magnifying-glass"></span>
-                            <input type="text" name="query" placeholder="Search" class="column large-6 search" />
-                            <div class="column large-3 show-for-large no-wrap">
-                                <a class="acontrast sans-serif" href="{% url 'login' %}">Login</a>
+                        <div class="row align-middle text-end">
+                            <!-- <span class="column large-2 show-for-large icon fi-magnifying-glass"></span>
+                            <input type="text" name="query" placeholder="Search" class="column large-6 show-for-large search" /> -->
+                            <div class="column no-wrap">
+                                <a class="acontrast sans-serif" href="{% url 'login' %}">Login with Bahá'í ID</a>
                             </div>
                         </div>
                     </div>
