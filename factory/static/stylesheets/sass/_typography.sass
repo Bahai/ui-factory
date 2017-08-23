@@ -1,11 +1,12 @@
 
-$font-primary: 'Crimson Text', Georgia, 'Times New Roman', serif
-$font-secondary: 'Proxima Nova', 'Helvetica Neue', Arial, sans-serif
+$font-primary: 'acumin-pro', Helvetica, Arial, sans-serif
+$font-secondary: 'acumin-pro', Helvetica, Arial, sans-serif
 $font-color-primary: #2E251C
 $font-color-secondary: #25635B
 $font-color-contrast: #FCFCFC
-$link-color: #05353D
+$link-color: #25635B
 $link-color-contrast: #DEEAEF
+$heading-color: #05353D
  
 
 @mixin text-primary()
@@ -18,8 +19,7 @@ $link-color-contrast: #DEEAEF
 
 h1, h2, h3, h4, h5, h6
 	@include text-secondary
-	a
-		@include text-secondary
+	font-color: $heading-color
 
 p, blockquote
 	@include text-primary
