@@ -20,9 +20,9 @@
 <body>
     <div class="off-canvas-wrapper">
         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-            <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas data-position="left">
+            <div class="off-canvas position-left reveal-for-large" id="offCanvas" data-off-canvas data-transition="overlap" data-content-overlay="true">
                 {# LEFT MENU #}
-                <ul class="plain-list plain-link">
+                <ul class="plain-list plain-link" data-drilldown>
                     <a href="/">
                         <li class="off-canvas-menu-item">Home</li>
                     </a>
@@ -53,6 +53,19 @@
                     <a href="https://www.bahai.us/glsa/">
                         <li class="off-canvas-menu-item">GLSA</li>
                     </a>
+                    <li class="off-canvas-menu-item">
+                        <a href="">Directories</a>
+                        <ul class="menu vertical plain-list">
+                            <li><a href="">Assemblies and Groups</a></li>
+                            <li><a href="">Auxiliary Board</a></li>
+                            <li><a href="">Continental Board of Counselors</a></li>
+                            <li><a href="">Regional Councils</a></li>
+                            <li><a href="">National Offices</a></li>
+                            <li><a href="https://www.bahai.us/community/huququllah/">The Board of Trustees of Ḥuqúqu'lláh in the United States</a></li>
+                            <li><a href="">Bahá’í Center Assistance</a></li>
+                        </ul>
+                    </li>
+
                 </ul>
             </div>
             {# TOP MENU #}
@@ -111,6 +124,7 @@
                     <div class="row align-center copyright">
                         <p class="pcontrast">&copy; 2017 National Spiritual Assembly of the Bahá'ís of the United States</p>
                     </div>
+                    <!-- ADD GOOGLE ANALYTICS CODE!!!!! -->
                 </footer>
                 <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
             </div>
