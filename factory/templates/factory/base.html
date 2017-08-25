@@ -154,6 +154,30 @@
             $graph.find('.circle-graph-percents-number').html(percent + 'M');
         });
     </script>
+    <script>
+        // initialize Packery
+        var $grid = $('.grid').packery({
+            itemSelector: '.home-box',
+            // columnWidth helps with drop positioning
+            columnWidth: 100
+        });
+        // make all items draggable
+        var $items = $grid.find('.home-box').draggable();
+        // bind drag events to Packery
+        $grid.packery('bindUIDraggableEvents', $items);
+    </script>
+    <script>
+        // initialize Packery
+        var $sidebar = $('.sidebar').packery({
+            itemSelector: '.home-box',
+            // columnWidth helps with drop positioning
+            columnWidth: 100
+        });
+        // make all items draggable
+        var $items = $sidebar.find('.home-box').draggable();
+        // bind drag events to Packery
+        $sidebar.packery('bindUIDraggableEvents', $items);
+    </script>
 </body>
 
 </html>
