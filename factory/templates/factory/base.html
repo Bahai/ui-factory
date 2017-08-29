@@ -159,9 +159,13 @@
         });
     </script>
     <script>
-        $(".home-box").click(function() {
-            $(this).toggleClass("card - border");
-        });
+        $(".home-box")
+            .mouseup(function() {
+                $(this).removeClass("card-border");
+            })
+            .mousedown(function() {
+                $(this).addClass("card-border");
+            });
     </script>
     <script>
         // initialize Packery
