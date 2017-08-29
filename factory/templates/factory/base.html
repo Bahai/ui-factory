@@ -159,13 +159,24 @@
         });
     </script>
     <script>
-        $(".home-box")
-            .mouseup(function() {
-                $(this).removeClass("card-border");
-            })
-            .mousedown(function() {
-                $(this).addClass("card-border");
-            });
+        $(function() {
+            var isDragging = false;
+            $(".home-box")
+                .mousedown(function() {
+                    event.preventDefault();
+                    isDragging = false;
+                    $(this).addClass("card-border");
+                })
+                .mousemove(function() {
+                    isDragging = true;
+                })
+                .mouseup(function() {
+                    isDragging = false;
+                    if (!isDragging) {
+                        $(this).removeClass("card-border");
+                    }
+                });
+        });
     </script>
     <script>
         // initialize Packery
