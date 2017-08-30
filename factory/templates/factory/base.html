@@ -12,7 +12,7 @@
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="{% static 'js/packery.pkgd.min.js' %}"></script>
     <script src="{% static 'js/draggabilly.pkgd.min.js' %}"></script>
     <script type="text/javascript" src="//use.typekit.net/ttb5aic.js"></script>
@@ -201,6 +201,13 @@
         var $items = $sidebar.find('.home-box').draggable();
         // bind drag events to Packery
         $sidebar.packery('bindUIDraggableEvents', $items);
+    </script>
+    <script>
+        var card = document.getElementById('card');
+
+        document.getElementById('flip').addEventListener('click', function() {
+            card.classList.toggle('flipped');
+        }, false);
     </script>
 </body>
 

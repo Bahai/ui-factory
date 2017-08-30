@@ -155,6 +155,37 @@ input
 .card-border
 	border: 2px solid black
 
+.container 
+    width: 620px
+    height: 210px
+    position: relative
+    perspective: 800px
+
+#card 
+    width: 100%
+    height: 100%
+    position: absolute
+    transform-style: preserve-3d
+    transition: transform 1s
+
+#card figure 
+    margin: 0
+    display: block
+    position: absolute
+    width: 100%
+    height: 100%
+    backface-visibility: hidden
+
+#card .front 
+    background: #FBFBF6
+
+#card .back 
+    background: #FBFBF6
+    transform: rotateY( 180deg)
+
+#card.flipped 
+    transform: rotateY( 180deg)
+
 /* Messages */
 
 .title-bar, .top-bar
