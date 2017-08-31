@@ -210,6 +210,24 @@
             card.classList.toggle('flipped');
         }, false);
     </script>
+    <script>
+        (function() {
+            var kineticoAPI = "https://deliver.kenticocloud.com/5a00c46b-cfff-4d35-8a66-a815c3beba33/items?system.name=any_layout&elements[background_image]";
+            $.getJSON(kineticoAPI, {
+                    format: "json"
+                })
+                .done(function(data) {
+                    $.each(data.items, function(i, item) {
+                        for (var j = 0; j <= item.elements.background_image.value.length; j++) {
+                            $('<img style="width:75px; height: 75px; margin-right: 5px;">').attr("src", item.elements.background_image.value[j].url).appendTo("#display");
+                        };
+                        if (i === 7) {
+                            return false;
+                        }
+                    });
+                });
+        })();
+    </script>
 </body>
 
 </html>
