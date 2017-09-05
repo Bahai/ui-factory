@@ -6,3 +6,5 @@ db.sqlite3
 .vscode
 .sass-cache
 .yml
+dist
+node_modules
