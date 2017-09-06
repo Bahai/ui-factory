@@ -15,10 +15,10 @@ class App extends React.Component { //component definition
     }
 }
 
-ReactDOM.render( 
-    <App />,
-    document.getElementById('app')
-);
+// ReactDOM.render( 
+//     <App />,
+//     document.getElementById('app')
+// );
 
 const cardContainer = document.querySelector('.react-card');
 
