@@ -7,17 +7,30 @@ require('./index.css');
 //lifesycle event
 //UI (the only part that is absolutely required)
 
-class App extends React.Component { //component definition
-    render() {
-        return ( 
-            <div>Hello World!</div>
-        );
+var Hello = React.createClass ({
+    render: function() {
+        return (
+            <h1>
+            Hello, React!
+            </h1>
+        )
     }
-}
+})
+
+ReactDOM.render(<Hello />, document.getElementById('container'))
+
+
+// class App extends React.Component { //component definition
+//     render() {
+//         return ( 
+//             <div>Hello World!</div>
+//         );
+//     }
+// }
 
 // ReactDOM.render( 
 //     <App />,
-//     document.getElementById('app')
+//     document.getElementById('container')
 // );
 
 const cardContainer = document.querySelector('.react-card');
@@ -78,5 +91,5 @@ class Card extends React.Component {
  }
 }
 
-// Render Card component
-ReactDOM.render(<Card />, cardContainer);
+// // Render Card component
+// ReactDOM.render(<Card />, cardContainer);

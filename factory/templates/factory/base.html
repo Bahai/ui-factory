@@ -14,16 +14,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
     <script src="{% static 'js/packery.pkgd.min.js' %}"></script>
-    <script src="{% static 'js/graggabilly.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/draggabilly.pkgd.min.js' %}"></script>
     <script src="{% static 'js/huebee.pkgd.min.js' %}"></script>
     <script crossorigin src="https://unpkg.com/react@15/dist/react.min.js"></script>
     <script crossorigin src=https://unpkg.com/react-dom@15/dist/react-dom.min.js></script>
-    <script type="text/javascript" src="//use.typekit.net/ttb5aic.js"></script>
-    <script type="text/javascript">
-        try {
-            Typekit.load();
-        } catch (e) {}
-    </script>
 
     {# STYLESHEETS #}
     <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/css/main.css' %}" />
@@ -146,7 +140,36 @@
             </div>
         </div>
     </div>
-
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'goy1unx',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
     <script>
         $(document).foundation();
     </script>
@@ -237,7 +260,7 @@
                     });
                 });
         })();
-    </script>
+</script>
 </body>
 
 </html>

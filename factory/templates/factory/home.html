@@ -1,4 +1,4 @@
-{% extends 'factory/base.html' %} {% load static %} {% block content %}
+{% extends 'factory/base.html' %} {% load static %} {% load render_bundle from webpack_loader %} {% block content %}
 <main>
     <div class="">
         <img class="color-input" src="{% static 'img/ellipsis.png' %}">
@@ -7,7 +7,9 @@
         <div class="column small-12 medium-8">
             <div class="grid">
                 <!-- Secretariat content-->
-                <div class="react-card"></div>
+                <div id="container" class="react-card">
+                </div>
+                {% render_bundle 'main' %}
                 <div class="row">
                     <article class="column home-box">
                         <div class="container">
