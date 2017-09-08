@@ -1,14 +1,16 @@
 var path = require('path');
 var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var BundleTracker = require('webpack-bundle-tracker')
+// var HtmlWebpackPlugin = require('html-webpack-plugin');
+var BundleTracker = require('webpack-bundle-tracker');
 
 module.exports = {
     context: __dirname,
     entry: './app/index.js',
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'index_bundle.js'
+        // path: path.resolve(__dirname, 'dist'),
+        // filename: 'index_bundle.js',
+        path: path.resolve('./app/bundles/'), 
+        filename: '[name]-[hash].js', 
     },
     module: {
         rules: [
@@ -18,6 +20,6 @@ module.exports = {
     },
     plugins: [
         new BundleTracker({filename: './webpack-stats.json'}),
-        new HtmlWebpackPlugin({template: 'app/index.html'})
+        // new HtmlWebpackPlugin({template: 'app/index.html'})
     ]
 }
