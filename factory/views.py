@@ -16,6 +16,9 @@ def article(request):
 def login(request):
     return render(request, 'login/index.html', {})
 
+def logout(request):
+    return render(request, 'login/logout.html', {})
+
 def help(request):
     return render(request, 'login/help.html', {})
 

@@ -1,0 +1,10 @@
+{% extends '../factory/base.html' %} {% block globalbreadcrumbs %}
+<li><a href="{% url 'login' %}"><span class="show-for-sr">Current: </span>Login</a></li>
+{% endblock globalbreadcrumbs %} {% block content %}
+
+<main>
+    <h1>You are logged out</h1>
+
+</main>
+
+{% endblock %}

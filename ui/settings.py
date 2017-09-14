@@ -95,6 +95,8 @@ WEBPACK_LOADER = {
     }
 }
 
+LOGIN_REDIRECT_URL = 'home'
+
 COMPRESS_PRECOMPILERS = (
     ('text/x-sass', 'sass {main.sass} {main.css}'),
     #('text/x-scss', 'sass --scss {main.scss} {main.css}'),

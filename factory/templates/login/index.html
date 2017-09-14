@@ -2,21 +2,19 @@
 <li><a href="{% url 'login' %}"><span class="show-for-sr">Current: </span>Login</a></li>
 {% endblock globalbreadcrumbs %} {% block content %}
 
-<body>
-    <main>
-        <h1>Login</h1>
-        <section id="login">
-            <form action="submit">
-                <label for="bahai-id">Bahá'í ID</label>
-                <input placeholder='00123456' type="text" name='bahai-id' id='bahai-id' />
-                <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Password">
-                <div class="text-right"><button type="submit" class="button">Login</button></div>
-            </form>
-        </section>
-        <a href="{% url 'register' %}">Register</a>
-        <a href="/help">Having Trouble?</a>
-    </main>
-</body>
+<main>
+    <h1>Login</h1>
+    <section id="login">
+        <form method="post">
+            <label for="bahai-id">Bahá'í ID</label>
+            <input placeholder='00123456' type="text" name='bahai-id' id='bahai-id' /> {% csrf_token %}
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password"> {{ form.as_p }}
+            <div class="text-right"><button type="submit" class="button">Login</button></div>
+        </form>
+    </section>
+    <a href="{% url 'register' %}">Register</a>
+    <a href="/help">Having Trouble?</a>
+</main>
 
 {% endblock %}
