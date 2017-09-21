@@ -2,8 +2,26 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
+from django.contrib.auth import authenticate, login
+from django.contrib.auth import logout
 
-# Create your views here.
+
+def my_view(request):
+    username = request.POST['username']
+    password = request.POST['password']
+    user = authenticate(request, username=username, password=password)
+    if user is not None:
+        login(request, user)
+        # Redirect to a success page.
+        return render(request, 'factory/home.html', {})
+    else:
+        # Return an 'invalid login' error message.
+        return render(request, 'login/help.html', {})
+
+def logout_view(request):
+    logout(request)
+    return render(request, 'login/logout.html', {})
+
 def home(request):
     return render(request, 'factory/home.html', {})
 

@@ -90,7 +90,8 @@
                     <a href="/"><span class="starlogo"></span></a>
                 </div>
                 <div class="column small-3 text-right">
-                    <a class="acontrast sans-serif" href="{% url 'login' %}">Login</a>
+                    <a class="acontrast sans-serif" href="{% url 'login' %}">Login</a> |
+                    <a href="{% url 'logout' %}">Logout</a>
                 </div>
             </nav>
             {# BREADCRUMBS #}
@@ -260,7 +261,7 @@
                     });
                 });
         })();
-</script>
+    </script>
 </body>
 
 </html>

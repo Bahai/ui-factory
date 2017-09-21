@@ -1,8 +1,5 @@
 {% extends 'factory/base.html' %} {% load static %} {% load render_bundle from webpack_loader %} {% block content %}
 <main>
-    <div class="">
-        <img class="color-input" src="{% static 'img/ellipsis.png' %}">
-    </div>
     <div class="row">
         <div class="column small-12 medium-8">
             <div class="grid">
@@ -41,6 +38,7 @@
                         <button id="flip">Settings</button>
                     </article>
                 </div>
+                {% if user.is_authenticated %}
                 <div class="row">
                     <article class="column home-box">
                         <h4>Letters Regarding Excused Absences</h4>
@@ -59,6 +57,7 @@
                         </ul>
                     </article>
                 </div>
+                {% endif %}
                 <div class="row text-center">
                     <article class="column home-box">
                         <h4><a href="www.bahai.us/bicentenary-resources">Bicentenary Resources Website</a></h4>
@@ -102,6 +101,7 @@
         <!-- Sidebar -->
         <div class="column small-12 medium-4">
             <div class="sidebar">
+                {% if user.is_authenticated %}
                 <article class="home-box row">
                     <div class="column row row">
                         <h5>2018 Fund Goal: $36M</h5>
@@ -159,6 +159,7 @@
                     <p>The transcript, which is a little over 18 pages in length, can be accessed through the link immediately below. It can either be read online or downloaded to your own computer for long-term study and reflection.</p>
                     <p><a href="https://s3.amazonaws.com/bahai-web/tab/transcripts/May-20-transcript-Mr.-Paul-Lample-at-bhow_english.pdf">Transcript of May 20 Talk by Mr. Paul Lample at the Bahá’í House of Worship</a></p>
                 </article>
+                {% endif %}
                 <article class="home-box">
                     <h5>Need Help?</h5>
                     <p>For support or inquiries regarding the new site, please contact <a href="mailto:web@bahai.us">web@bahai.us</a></p>
