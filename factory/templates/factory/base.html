@@ -39,6 +39,7 @@
                     <a href="{% url 'news' %}">
                         <li class="off-canvas-menu-item">News</li>
                     </a>
+                    {% if user.is_authenticated %}
                     <a href="{% url 'messages' %}">
                         <li class="off-canvas-menu-item">Messages</li>
                     </a>
@@ -63,6 +64,7 @@
                     <a href="https://www.bahai.us/glsa/">
                         <li class="off-canvas-menu-item">GLSA</li>
                     </a>
+                    {% endif %}
                     <li class="off-canvas-menu-item">
                         <a href="">Directories</a>
                         <ul class="menu vertical plain-list">
