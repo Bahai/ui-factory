@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
 from django.contrib.auth import logout
+from django.contrib.auth.decorators import login_required
 
 
 def my_view(request):
@@ -28,6 +29,7 @@ def home(request):
 def news(request):
     return render(request, 'TAB/blog_index_page.html', {})
 
+@login_required(login_url='/login/')
 def article(request):
     return render(request, 'TAB/blog_page.html', {})
 
@@ -49,20 +51,26 @@ def loginreset(request):
 def contact(request):
     return render(request, 'login/contact.html', {})
 
+@login_required(login_url='/login/')
 def messages(request):
     return render(request, 'messages/messages.html', {})
 
+@login_required(login_url='/login/')
 def Universal_House_of_Justice(request):
     return render(request, 'messages/uhj.html', {})
 
+@login_required(login_url='/login/')
 def National_Spiritual_Assembly(request):
     return render(request, 'messages/nsa.html', {})
 
+@login_required(login_url='/login/')
 def Feast(request):
     return render(request, 'messages/feast.html', {})
     
+@login_required(login_url='/login/')
 def Special(request):
     return render(request, 'messages/special.html', {})
 
+@login_required(login_url='/login/')
 def letter(request):
     return render(request, 'messages/letter.html', {})

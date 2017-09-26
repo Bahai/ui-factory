@@ -1,3 +1,5 @@
+// be in the factory directory and run 'foundation watch'
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var $ = require('gulp-load-plugins')();
