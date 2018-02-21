@@ -6,36 +6,19 @@
                 <!-- Secretariat content -->
                 <div class="row">
                     <div id="container"></div>
-                    {% render_bundle 'main' %}
                     <article class="column home-box">
-                        <div class="container">
-                            <div id="card">
-                                <figure class="front">
-                                    <div class="row">
-                                        <div class="column small-12 medium-6 plain-column-left">
-                                            <img src="{% static 'img/natcon_how_icon.png' %}" alt="House of Worship">
-                                        </div>
-                                        <div class="column small-12 medium-6 plain-column-right">
-                                            <article class="text-center">
-                                                <h4><a href="https://www.bahai.us/community/natcon2017/">Read more</a> about the 2017 National Convention</h4>
-                                                <hr>
-                                                <h4>Riḍván 2017 <a href="https://s3.amazonaws.com/natcon2017.bahai.us/docs/2017-NSA-annual-report.pdf">Annual Report</a></h4>
-                                            </article>
-                                        </div>
-                                    </div>
-                                </figure>
-                                <figure class="back">
-                                    <span class="dice dice-1" title="Dice 1"></span>
-                                    <span class="dice dice-2" title="Dice 2"></span>
-                                    <span class="dice dice-3" title="Dice 3"></span>
-                                    <span class="dice dice-4" title="Dice 4"></span>
-                                    <span class="dice dice-5" title="Dice 5"></span>
-                                    <span class="dice dice-6" title="Dice 6"></span>
-                                    <div id="display"></div>
-                                </figure>
+                        <div class="row align-middle">
+                            <div class="column small-12 medium-6 plain-column-left">
+                                <img src="{% static 'img/natcon_how_icon.png' %}" alt="House of Worship">
+                            </div>
+                            <div class="column small-12 medium-6 plain-column-right">
+                                <article class="text-center">
+                                    <h4><a href="https://www.bahai.us/community/natcon2017/">Read more</a> about the 2017 National Convention</h4>
+                                    <hr>
+                                    <h4>Riḍván 2017 <a href="https://s3.amazonaws.com/natcon2017.bahai.us/docs/2017-NSA-annual-report.pdf">Annual Report</a></h4>
+                                </article>
                             </div>
                         </div>
-                        <button id="flip">Settings</button>
                     </article>
                 </div>
                 {% if user.is_authenticated %}

@@ -4,21 +4,48 @@
 <p>Your username and password didn't match. Please try again.</p>
 {% endif %}
 <main>
-    <h2>Login</h2>
-    <form method="post" action="{% url 'login' %}">
-        {% csrf_token %}
-        <table>
-            <tr>
-                <td>{{ form.username.label_tag }}</td>
-                <td>{{ form.username }}</td>
-            </tr>
-            <tr>
-                <td>{{ form.password.label_tag }}</td>
-                <td>{{ form.password }}</td>
-            </tr>
-        </table>
-        <input type="submit" value="login" />
-        <input type="hidden" name="next" value="{{ next }}" />
-    </form>
+    <section id="login">
+        <div class="row">
+            <article class="column home-box">
+                <h3>Login</h3>
+                <form method="post" action="{% url 'login' %}">
+                    {% csrf_token %}
+                    <label for="bahai-id">Unsername</label> {{ form.username }}
+                    <label for="password">Password</label> {{ form.password }}
+                    <div class="text-right"><button type="submit" value="login" class="button">Login</button></div>
+                    <input type="hidden" name="next" value="{{ next }}" />
+                </form>
+                <!-- <a href="{% url 'register' %}">Register</a> -->
+                <a href="/help">Having Trouble?</a>
+            </article>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <article class="column home-box">
+                <h3>Having trouble with the Login?</h3>
+                <p>
+                    <strong>What is my Bahá'í ID number?</strong><br> You can find your Bahá'í ID on your ID card or by contacting ___
+                </p>
+                <p>
+                    <strong>I forgot my password.</strong><br> You may answer your security questions to have a temporary password emailed to you by filling out <a href="/passwordreset">this form.</a>
+                </p>
+                <p>
+                    <strong>I'm getting an error message.</strong><br>
+                    <ul>
+                        <li><strong>Invalid Request Token: </strong>First, clear your browser cache and/or history. Second, close your internet browser completely and reopen it. Third, type bahai.us directly into the address bar at the top and hit enter.
+                            Use the "Sign In" option in the menu in the upper right corner to login. To avoid this error in the future, we suggest not bookmarking the loging page but instead bookmarking bahai.us.</li>
+                        <li><strong>Invalid ID or password: </strong>Make sure that you have typed in your ID password correctly, remembering that the password is case sensitive and try again. Keep in mind that three unsuccessful login attempts will temporarily
+                            lock your account. If you can't remember your password you may <a href="/passwordreset">reset it</a>.</li>
+                        <li><strong>Other Error: </strong></li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>I need to update my contact information.</strong><br> If you are able to login, you can update your contact information via <a href="/community/profile">My Page</a>. If you need to update your email address in order to reset
+                    your password please <a href="/contact">contact us</a>.
+                </p>
+            </article>
+        </div>
+    </section>
 </main>
 {% endblock %}

@@ -23,6 +23,9 @@ def logout_view(request):
     logout(request)
     return render(request, 'login/logout.html', {})
 
+def reset(request):
+    return render(request, 'login/password_reset.html', {})
+
 def home(request):
     return render(request, 'factory/home.html', {})
 

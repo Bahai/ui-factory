@@ -106,7 +106,9 @@
                                 {% block globalbreadcrumbs %}{% endblock globalbreadcrumbs %}
                             </ul>
                         </div>
-                        <span class="column date text-end">{% now 'd F Y' %}</span>
+                        {% if user.is_authenticated %}
+                        <div class="column text-center">Welcome, {{ user.username }}</div> {% endif %}
+                        <div class="column date text-end">{% now 'd F Y' %}</div>
                     </div>
                 </header>
 
