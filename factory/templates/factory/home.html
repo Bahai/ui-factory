@@ -1,10 +1,10 @@
 {% extends 'factory/base.html' %} {% load static %} {% load render_bundle from webpack_loader %} {% block content %}
 <main>
+        {% if user.is_authenticated %}
     <div class="row">
         <div class="column small-12 medium-8">
                 <!-- Secretariat content -->
                 <div class="row">
-                    {% render_bundle 'main' %}
                     <article class="column home-box">
                         <div class="row">
                             <div class="column small-12 medium-6 plain-column-left">
@@ -144,6 +144,11 @@
             </div>
         </div>
     </div>
+    {% else %}
+    <div class="row">
+        <h3>Please login to view this page</h3>
+    </div>
+    {% endif %}
 </main>
 <!-- <article id="" class="column home-box">
                         <h4>Current Feast Message</h4>

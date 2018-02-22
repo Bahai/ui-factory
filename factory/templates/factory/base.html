@@ -39,6 +39,7 @@
                     <a href="{% url 'news' %}">
                         <li class="off-canvas-menu-item">News</li>
                     </a>
+                    {% if user.is_authenticated %}
                     <a href="{% url 'messages' %}">
                         <li class="off-canvas-menu-item">Messages</li>
                     </a>
@@ -75,7 +76,7 @@
                             <li><a href="">Bahá’í Center Assistance</a></li>
                         </ul>
                     </li>
-
+                {% endif %}
                 </ul>
             </div>
             {# TOP MENU #}
@@ -89,9 +90,15 @@
                 <div class="column">
                     <a href="/"><span class="starlogo"></span></a>
                 </div>
+                {% if user.is_authenticated %}
+                <div class="column small-3 text-right">
+                    <a class="acontrast sans-serif" href="{% url 'logout' %}">Logout</a>
+                </div>
+                {% else %}
                 <div class="column small-3 text-right">
                     <a class="acontrast sans-serif" href="{% url 'login' %}">Login</a>
                 </div>
+                {% endif %}
             </nav>
             {# BREADCRUMBS #}
             <div class="off-canvas-content" data-off-canvas-content>
