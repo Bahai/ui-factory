@@ -22,5 +22,4 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('factory.urls')),
-    # url(r'^login/$', views.login, {'template_name': 'login.html'}),
 ]
