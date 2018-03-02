@@ -90,11 +90,17 @@
                 <div class="column">
                     <a href="/"><span class="starlogo"></span></a>
                 </div>
+                {% if user.is_authenticated %}
+                <div class="column small-3 text-right">
+                    <a class="acontrast sans-serif" href="{% url 'logout' %}">Logout</a>
+                </div>
+                {% else %}
                 <div class="column small-3 text-right">
                     {% if user.is_authenticated %}
                     <a class="acontrast sans-serif" href="{% url 'logout' %}">Logout</a> {% else %}
                     <a class="acontrast sans-serif" href="{% url 'login' %}">Login</a> {% endif %}
                 </div>
+                {% endif %}
             </nav>
             {# BREADCRUMBS #}
             <div class="off-canvas-content" data-off-canvas-content>
